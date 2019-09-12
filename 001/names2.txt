@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 Daniel Camarena
+=======
+<<<<<<< HEAD
+Michael Hering
+=======
+Jake Henson
+>>>>>>> 667a360bb3c659e6371b59813421245bcf9f138a
+>>>>>>> 5003c8ce94a6096a9cd0e624cf5e319fe4791479
