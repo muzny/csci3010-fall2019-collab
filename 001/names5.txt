@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 Selena Quintanilla
+=======
+Matthew Donovan
+Maura Winstanley
+
+>>>>>>> 57ddc27f5a25ff11be2e39ff98a413bd087d4f43
