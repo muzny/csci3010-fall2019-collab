@@ -1,5 +1,3 @@
-<<<<<<< HEAD
 Matthew Donovan
-=======
 Maura Winstanley
->>>>>>> abf40f6902ff80d50358c161809656e917f9a0ac
+
