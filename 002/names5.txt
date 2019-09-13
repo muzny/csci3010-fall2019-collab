@@ -1,8 +1,7 @@
+Alden Maben
 Nick Zimmerman
 Jordan Goodridge
 Bryce DesBrisay 
-<<<<<<< HEAD
+Chris Kardaras
+Cathy
 
-=======
-Cathy???
->>>>>>> 662ac06f0afd102139573be255cd136f33eb240f
