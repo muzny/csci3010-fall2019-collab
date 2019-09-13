@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Nasurudin Furi
 
@@ -9,10 +10,13 @@ Andrea Martorano
 Colin Craighead
 
 M  Nasurudin Furi
+=======
+M  Dean Furi
+>>>>>>> a269aaf7e2b06a33a1ddae89425252edf1d603ac
 E Liam McCarthy
 R
 G  Sam Evans
-E
+E Colin Craighead
 C
 O
 N
