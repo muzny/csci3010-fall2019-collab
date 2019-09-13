@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+Alden Maben
+=======
 Nick Zimmerman
 Jordan Goodridge
 Bryce DesBrisay 
@@ -6,3 +9,4 @@ Bryce DesBrisay
 =======
 Cathy???
 >>>>>>> 662ac06f0afd102139573be255cd136f33eb240f
+>>>>>>> 0aadde1028e261eb504517eb49d53b6376a4c5f8
