@@ -2,7 +2,7 @@ M  Nasurudin Furi
 E Liam McCarthy
 R
 G  Sam Evans
-E
+E Colin Craighead
 C
 O
 N
@@ -11,3 +11,4 @@ L
 I
 C
 T
+Comp Sci is not the future!
