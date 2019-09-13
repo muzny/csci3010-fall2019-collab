@@ -1,13 +1,6 @@
-M  Nasurudin Furi
-E Liam McCarthy
-R
-G  Sam Evans
-E
-C
-O
-N
-F
-L
-I
-C
-T
+Felix Muzny
+Nasurudin Furi
+Sam Evans
+Andrea Martorano
+Colin Craighead
+Liam McCarthy
