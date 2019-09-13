@@ -1,14 +1,7 @@
-M  Dean Furi
-E Liam McCarthy
-R
-G  Sam Evans
-E Colin Craighead
-C
-O
-N
-F
-L
-I
-C
-T
-Comp Sci is not the future!
+
+Nasurudin Furi
+Sam Evans
+Andrea Martorano
+Colin Craighead
+Liam McCarthy
+
