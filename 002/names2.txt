@@ -1,32 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
+Felix Muzny
 Nasurudin Furi
-
-
 Sam Evans
-
 Andrea Martorano
-
 Colin Craighead
-
-M  Nasurudin Furi
-=======
-M  Dean Furi
->>>>>>> a269aaf7e2b06a33a1ddae89425252edf1d603ac
-=======
-M  Nasurudin Furi
->>>>>>> 2d65d55f4531ea52c81a7fe64f026c6eaff70994
-E Liam McCarthy
-R
-G  Sam Evans
-E Colin Craighead
-C
-O
-N
-F
-L
-I
-C
-T
-Comp Sci is not the future!
+Liam McCarthy
