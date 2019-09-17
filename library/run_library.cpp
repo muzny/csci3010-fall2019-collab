@@ -12,5 +12,9 @@ int main() {
 
     // start off with one library instantiated
     Library lib;
+	Book b;
+	b.title = "Extreme Dieting";
+	b.author = "Random";
+	lib.DonateMult(b, 4);
 
 }
