@@ -4,6 +4,8 @@
 struct Book {
     std::string title;
     std::string author;
+
+    bool operator==(const Book &b);
 };
 
 
@@ -15,6 +17,7 @@ public:
 
     void PrintBooks();
 
+    bool operator==(const Library & lib);
 private:
     // arrays require size to be known at compile time.
     // if we were only going to store a fixed number of books
