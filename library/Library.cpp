@@ -4,13 +4,18 @@
 
 #include "Library.h"
 
+std::ostream & operator<<(std::ostream & os, const Library lib)
+{
+    
+}
 
 /**
 	Zero argument constructor initializes a library with a shelf but no books.
 */
-Library::Library() {
+Library::Library(string n) {
 	std::vector<Book> tmp;
 	shelf_ = tmp;  // initialize my shelf
+    name = n;
 }
 
 void Library::Donate(Book b) {

@@ -9,7 +9,7 @@ struct Book {
 
 class Library {
 public:
-    Library();
+    Library(string n);
 
     void Donate(Book b);
 
@@ -21,6 +21,7 @@ private:
     // we could do this easily:
     // Book shelf_[10];
     std::vector<Book> shelf_;
+    string name;
 };
 
 
