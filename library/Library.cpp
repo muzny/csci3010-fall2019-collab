@@ -12,7 +12,7 @@ std::ostream & operator<<(std::ostream & os, const Library lib)
 /**
 	Zero argument constructor initializes a library with a shelf but no books.
 */
-Library::Library(string n) {
+Library::Library(std::string n) {
 	std::vector<Book> tmp;
 	shelf_ = tmp;  // initialize my shelf
     name = n;
