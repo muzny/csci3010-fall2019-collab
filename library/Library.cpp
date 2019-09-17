@@ -22,3 +22,10 @@ void Library::PrintBooks() {
 		std::cout << b.title << " by " << b.author << std::endl;
 	}
 }
+	
+void Library::Donate(Book b, int num_donated) {
+	for(int i=0; i<num_donated; i++){
+		shelf_.push_back(b);
+	}
+}
+
