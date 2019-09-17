@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "Library.h"
+using namespace std;
 
 /* 
 File comment should go here
@@ -16,5 +17,6 @@ int main() {
 	b.title = "Extreme Dieting";
 	b.author = "Random";
 	lib.DonateMult(b, 4);
+	lib.PrintBooks();
 
 }
