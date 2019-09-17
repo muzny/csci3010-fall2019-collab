@@ -22,3 +22,8 @@ void Library::PrintBooks() {
 		std::cout << b.title << " by " << b.author << std::endl;
 	}
 }
+
+bool Library::ReturnBooks(Book a){
+	shelf_.push_back(a);
+	std::cout<<"Thank you for returning " <<a.title<<std::endl;
+}
