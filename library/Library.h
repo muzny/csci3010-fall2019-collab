@@ -14,6 +14,7 @@ public:
     void Donate(Book b);
 
     void PrintBooks();
+    int Find(std::string auth);
 
 private:
     // arrays require size to be known at compile time.
