@@ -24,7 +24,7 @@ void Library::PrintBooks() {
 }
 
 /**
-	Find takes in an author string and prints all of the matching books with that author
+	Find takes in an author string and prints all of the matching books with that author 
 	by Jake Henson and Daniel Camarena
 */
 int Library::Find(std::string auth){
