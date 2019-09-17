@@ -13,4 +13,17 @@ int main() {
     // start off with one library instantiated
     Library lib;
 
+    Book b1;
+    b1.title = "Harry Potter";
+    b1.author = "Musaab, of course!";
+
+    Book b2;
+    b2.title = "Angels and Demons";
+    b2.author = "Oceane, of course!";
+
+    lib.ReturnBooks(b1);
+    lib.PrintBooks();
+    lib.ReturnBooks(b2);
+    lib.PrintBooks();
+
 }
