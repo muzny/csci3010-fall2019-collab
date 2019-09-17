@@ -12,7 +12,7 @@ public:
     Library();
 
     void Donate(Book b);
-	void Donate(Book b, int num_donated);
+	void DonateMult(Book b, int num_donated);
     void PrintBooks();
 
 private:
