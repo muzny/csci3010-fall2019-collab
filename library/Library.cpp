@@ -31,8 +31,7 @@ void Library::PrintBooks() {
 bool Library::operator==(const Library & lib) {
 	set <std::string> book_ids;
 	set <std::string> book_ids_2;
-	int n = book_ids.size();
-
+	
     for (Book b : shelf_) {
     	books_ids.insert(b.author+b.title);
     }
