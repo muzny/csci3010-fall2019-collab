@@ -1,5 +1,6 @@
-<<<<<<< HEAD
+
+Wenxin Lu
+
+Zhaoyi Xie
+
 Abigail Nay
-=======
-Abigail Nay
->>>>>>> c69e0443136ce7b9deda683de71e1ed1e181721b
