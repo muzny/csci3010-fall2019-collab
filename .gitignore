@@ -1,0 +1,13 @@
+# coding.csel.io detritus
+.ipynb_checkpoints
+
+# mac detritus
+.DS_Store
+
+# vim detritus
+*.swo
+*.swp
+
+# emacs detritus
+*~
+\#*\#
