@@ -22,3 +22,8 @@ void Library::PrintBooks() {
 		std::cout << b.title << " by " << b.author << std::endl;
 	}
 }
+
+void Library::CheckoutBook(Book b) {
+	std::find(shelf_.begin(), shelf_.end(), b);
+	shelf_.erase(shelf_.begin() + 1);
+}
