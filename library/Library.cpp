@@ -23,7 +23,7 @@ void Library::PrintBooks() {
 	}
 }
 	
-void Library::Donate(Book b, int num_donated) {
+void Library::DonateMult(Book b, int num_donated) {
 	for(int i=0; i<num_donated; i++){
 		shelf_.push_back(b);
 	}
