@@ -5,6 +5,13 @@
 /* 
 File comment should go here
 
+Authors:
+Will Culkin
+Bryce DesBrisay
+
+implemented keyword find to search book titles
+
+lecture 7
 */
 
 
@@ -20,6 +27,6 @@ int main() {
     lib.Donate(b1);
 
     bool found = lib.Find("Cat");
-    std::cout << "Keyword Found: " << found << std::endl;
+    std::cout << "Keywordgit  Found: " << found << std::endl;
 
 }
