@@ -23,9 +23,9 @@ void Library::PrintBooks() {
 	}
 }
 
-bool Library::find(std::string name){
+bool Library::Find(std::string name) {
 	for (Book b : shelf_) {
-		if(b.title.find(name)){
+		if (b.title.find(name) != std::string::npos) {
 			return true;
 		}
 	}
