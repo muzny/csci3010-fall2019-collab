@@ -22,3 +22,11 @@ void Library::PrintBooks() {
 		std::cout << b.title << " by " << b.author << std::endl;
 	}
 }
+
+void Library::Browse(char c)
+{
+	for (Book b : shelf_) {
+		if (b.title[0] == c)
+			std::cout << b.title << " by " << b.author << std::endl;
+	}
+}

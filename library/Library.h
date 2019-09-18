@@ -14,6 +14,7 @@ public:
     void Donate(Book b);
 
     void PrintBooks();
+	void Browse(char);
 
 private:
     // arrays require size to be known at compile time.
