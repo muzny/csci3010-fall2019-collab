@@ -17,6 +17,17 @@ void Library::Donate(Book b) {
 	shelf_.push_back(b);
 }
 
+
+void Library::TakeInventory(){
+
+	std::cout<<"Inventory Contains:" <<std::endl;
+	for (Book b: shelf_){
+		std::cout<<b.title << "by" << b.author <<std::endl;
+	}
+}
+
+
+
 void Library::PrintBooks() {
 	for (Book b : shelf_) {
 		std::cout << b.title << " by " << b.author << std::endl;
