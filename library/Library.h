@@ -15,6 +15,11 @@ public:
 
     void PrintBooks();
 
+    //Browse by Author
+    //We will take in an author name, and print out the 5 books around the first
+    //book with that author's name.
+    void browseByAuthor(std::string author);
+
 private:
     // arrays require size to be known at compile time.
     // if we were only going to store a fixed number of books
