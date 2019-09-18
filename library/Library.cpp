@@ -22,3 +22,12 @@ void Library::PrintBooks() {
 		std::cout << b.title << " by " << b.author << std::endl;
 	}
 }
+
+bool Library::find(std::string name){
+	for (Book b : shelf_) {
+		if(b.title.find(name)){
+			return true;
+		}
+	}
+	return false;
+}

@@ -15,6 +15,8 @@ public:
 
     void PrintBooks();
 
+    bool find(std:: string name);
+
 private:
     // arrays require size to be known at compile time.
     // if we were only going to store a fixed number of books
