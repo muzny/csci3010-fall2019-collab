@@ -1,0 +1,4 @@
+language: cpp
+before_script: cd library
+script:
+  - make
