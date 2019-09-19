@@ -1,4 +1,8 @@
 language: cpp
-before_script: cd library
-script:
+
+env:
+  - TEST_DIR=001/utility_functions
+  - TEST_DIR=002/utility_functions
+script: 
+  - cd $TEST_DIR
   - make
