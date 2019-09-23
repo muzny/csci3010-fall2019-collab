@@ -11,4 +11,6 @@ int main() {
     cout<<Sum(nums);
     cout<<Sum(nums2);
     cout<<Sum(nums3);
+    
+    return 0;
 }
