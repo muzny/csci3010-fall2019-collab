@@ -2,6 +2,7 @@
 #include <vector> 
 #include <iostream>
 
+using namespace std;
 // Implement your functions here. Don't forget function comments!
 
 int Sum(std::vector<int> nums){
