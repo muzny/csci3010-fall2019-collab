@@ -2,9 +2,13 @@
 
 
 int main() {
-    // the main function should have demonstrations
-    // of running your functions.
-    // make sure that the output is easily interpretable.
-    // If you'd like to define helper functions in this file,
-    // you are welcome to do so!
+    vector<int> nums = {0,1,2,3,4,10};
+    vector<int> nums2 = {2,3,4,10};
+    vector<int> nums3 = {200,10};
+ 
+    nums3.push_back(10);
+    nums2.push_back(-10);
+    cout<<Sum(nums);
+    cout<<Sum(nums2);
+    cout<<Sum(nums3);
 }
