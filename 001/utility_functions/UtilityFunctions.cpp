@@ -1,4 +1,6 @@
 #include "UtilityFunctions.h"
+#include <vector> 
+#include <iostream>
 
 // Implement your functions here. Don't forget function comments!
 
