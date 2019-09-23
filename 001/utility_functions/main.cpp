@@ -1,6 +1,9 @@
 #include "UtilityFunctions.h"
 #include "catch.hpp"
+#include <vector>
+#include <iostream>
 
+using namespace std;
 
 int main() {
     vector<int> nums = {0,1,2,3,4,10};
