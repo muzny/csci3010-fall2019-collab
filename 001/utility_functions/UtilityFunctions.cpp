@@ -5,7 +5,7 @@
 using namespace std;
 // Implement your functions here. Don't forget function comments!
 
-int Sum(std::vector<int> nums){
+int Sum(vector<int> nums){
      
     int sum = 0;
     
