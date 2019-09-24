@@ -3,6 +3,8 @@
 
 #include "UtilityFunctions.h"
 
-// Your tests go here
-// Each TEST_CASE should test one function
-// Each SECTION should test one aspect of that function
+TEST_CASE("Vector string join on delimeter", "[Join]") {
+    REQUIRE(Join({"Cats", "Dogs", "Fish"}, ",") == "Cats,Dogs,Fish");
+    REQUIRE(Join({"Cats", "Dogs", "Fish"}, "|") == "Cats|Dogs|Fish");
+    REQUIRE(Join({"John", "Ralph", "Smith"}, " ") == "John Ralph Smith");
+}
