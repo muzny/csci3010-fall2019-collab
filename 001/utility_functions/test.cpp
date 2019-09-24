@@ -3,7 +3,7 @@
 
 #include "UtilityFunctions.h"
 
-TEST_CASE("Vector string join on delimeter", "[Join]") {
+TEST_CASE("Vector string join on delimiter", "[Join]") {
     REQUIRE(Join({"Cats", "Dogs", "Fish"}, ",") == "Cats,Dogs,Fish");
     REQUIRE(Join({"Cats", "Dogs", "Fish"}, "|") == "Cats|Dogs|Fish");
     REQUIRE(Join({"John", "Ralph", "Smith"}, " ") == "John Ralph Smith");

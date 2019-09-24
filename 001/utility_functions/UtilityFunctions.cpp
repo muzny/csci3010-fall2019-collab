@@ -1,7 +1,7 @@
 #include "UtilityFunctions.h"
 
 /**
-	Joins a vector of strings with a delimeter.
+	Joins a vector of strings with a delimiter.
 
     @param pieces Vector of strings
     @param glue Delimeter
