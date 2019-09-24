@@ -13,14 +13,14 @@ vector<int> ans99 = {99, 104, 94};
 
 TEST_CASE("Adding a number to all elements in an <int> vector", "[vector]"){
     SECTION("Test with 5 on {0, 5, -5}"){
-        REQUIRE(VectorPlusN(add5) == ans5);
+        REQUIRE(VectorPlusN(add5, 5) == ans5);
     }
  
     SECTION("Test with -5 on {0, 5, -5}"){
-        REQUIRE(VectorPlusN(addmin5) == ansmin5);
+        REQUIRE(VectorPlusN(addmin5, -5) == ansmin5);
     }
     
     SECTION("Test with 99 on {0, 5, -5}"){
-        REQUIRE(VectorPlusN(add99) == ans99);
+        REQUIRE(VectorPlusN(add99, 99) == ans99);
     }
 }
