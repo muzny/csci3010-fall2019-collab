@@ -4,6 +4,13 @@
 
 #include "Library.h"
 
+/**
+	Overloads standard output for Library
+
+	@param os Standard output stream.
+	@param lib Library.
+	@return Standard output stream
+*/
 std::ostream & operator<<(std::ostream & os, const Library lib) {
     for (Book b: lib.shelf_) {
 		os << b.title << " by " << b.author << std::endl;
@@ -12,7 +19,9 @@ std::ostream & operator<<(std::ostream & os, const Library lib) {
 }
 
 /**
-	Zero argument constructor initializes a library with a shelf but no books.
+	Constructor initializes a named library with a shelf but no books.
+
+	@param n Library name
 */
 Library::Library(std::string n) {
 	std::vector<Book> tmp;
