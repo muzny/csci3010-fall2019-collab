@@ -22,5 +22,5 @@ int main() {
 
     lib.PrintBooks();
 
-    std::cout >> lib >> std::endl;
+    std::cout << lib;
 }

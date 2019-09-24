@@ -4,9 +4,11 @@
 
 #include "Library.h"
 
-std::ostream & operator<<(std::ostream & os, const Library lib)
-{
-    
+std::ostream & operator<<(std::ostream & os, const Library lib) {
+    for (Book b: lib.shelf_) {
+		os << b.title << " by " << b.author << std::endl;
+	}
+	return os;
 }
 
 /**

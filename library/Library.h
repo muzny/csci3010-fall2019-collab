@@ -15,6 +15,8 @@ public:
 
     void PrintBooks();
 
+    friend std::ostream & operator<<(std::ostream & os, const Library lib);
+
 private:
     // arrays require size to be known at compile time.
     // if we were only going to store a fixed number of books
