@@ -23,10 +23,19 @@ void Library::PrintBooks() {
 	}
 }
 
+/*
+Function: FindBook
+Params: A string that should match a title.
+A simple function that finds a book and returns it. If nothing is found an exception 
+is thrown.
+Returns: A book if it is found.
+*/
+
 Book Library::FindBook(std::string t) {
-    for (int i = 0; i < shelf_.size(); i++){
+    for (size_t i = 0; i < shelf_.size(); i++){
         if(shelf_[i].title == t){
             return shelf_[i];
         }
     }
+  	throw std::invalid_argument( "No book found!" );
 }
