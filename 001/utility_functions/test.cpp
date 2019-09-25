@@ -2,7 +2,6 @@
 #include "catch.hpp"
 
 #include "UtilityFunctions.h"
-#include "UtilityFunctions.cpp"
 
 // Your tests go here
 // Each TEST_CASE should test one function

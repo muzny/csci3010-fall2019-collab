@@ -1,5 +1,4 @@
 #include "UtilityFunctions.h"
-#include "UtilityFunctions.cpp"
 #include <iostream>
 using namespace std;
 
