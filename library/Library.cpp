@@ -23,10 +23,10 @@ std::ostream & operator<<(std::ostream & os, const Library lib) {
 
 	@param n Library name
 */
-Library::Library(std::string n) {
+Library::Library(std::string name) {
 	std::vector<Book> tmp;
 	shelf_ = tmp;  // initialize my shelf
-    name = n;
+  name_ = name;
 }
 
 void Library::Donate(Book b) {
