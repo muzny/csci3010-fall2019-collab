@@ -11,4 +11,5 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 				a.erase(vec.begin() + j);
 		}		
 	}
+	return a;
 };
