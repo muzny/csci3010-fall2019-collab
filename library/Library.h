@@ -13,6 +13,9 @@ public:
 
     void Donate(Book b);
 
+    //Acquire amount of copies of Book b.
+    void Acquire(Book b, int copies);
+
     void PrintBooks();
 
 private:
