@@ -34,7 +34,8 @@ TEST_CASE( "Testing that Entire Vector is Multiplied Correctly with VectorTimesN
   }
 
   SECTION("Sending in an Empty Vector should Return an Empty Vector") {
-    std::vector<int> m = VectorTimesN(m, 2);
+    std::vector<int> m;
+    m = VectorTimesN(m, 10);
     REQUIRE(m.empty());
   }
 
