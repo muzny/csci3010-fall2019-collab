@@ -2,6 +2,7 @@
 #include "catch.hpp"
 
 #include "UtilityFunctions.h"
+#include <string>
 #include <vector>
 #include <iostream>
 // Your tests go here
