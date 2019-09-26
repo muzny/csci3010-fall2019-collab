@@ -1,10 +1,18 @@
 #include "UtilityFunctions.h"
+#include <vector>
+using namespace std;
 
+
+
+//Kevin Ruby -- A program to multiple all elements in vector by n.
 
 int main() {
-    // the main function should have demonstrations
-    // of running your functions.
-    // make sure that the output is easily interpretable.
-    // If you'd like to define helper functions in this file,
-    // you are welcome to do so!
+	vector<int> input{3,4,5};
+    vector<int> output = VectorTimesN(input,5);
+
+    for (int i=0;i<output.size();i++){
+    	cout << output[i] <<"  ";
+    }
+    cout<<endl;
+    return 0;
 }
