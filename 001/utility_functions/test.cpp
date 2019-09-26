@@ -2,6 +2,7 @@
 #include "catch.hpp"
 
 #include "UtilityFunctions.h"
+#include <vector>
 #include <iostream>
 // Your tests go here
 // Each TEST_CASE should test one function
