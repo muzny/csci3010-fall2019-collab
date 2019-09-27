@@ -1,10 +1,22 @@
 #include "UtilityFunctions.h"
-
-
+#include <iostream>
+using namespace std;
 int main() {
-    // the main function should have demonstrations
-    // of running your functions.
-    // make sure that the output is easily interpretable.
-    // If you'd like to define helper functions in this file,
-    // you are welcome to do so!
+
+    /*
+    Josef May
+
+    This function takes out elements that are not evenly divisible by the passed in int
+
+    */
+
+
+
+    vector <int> v{2,3,4,5,10,15,20,30}; //input vector
+    vector<int> outV = MultiplesFilter(v,5); //output vector
+    for(int i = 0; i < outV.size(); i++){ //print out output vector for expected result
+        cout << outV[i] << " | ";
+    }
+    cout << endl;
+    return 0;
 }
