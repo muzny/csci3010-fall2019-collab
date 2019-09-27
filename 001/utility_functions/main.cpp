@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <fstream>
 
 /**
     Returns the given vector formatted as an equation multiplying each element.
@@ -37,13 +38,27 @@ int main() {
     numbers = {1};
     std::cout << VectorAsEquation(numbers) << Product(numbers) << std::endl;
 
-	numbers = {3, 4, 5};
-	std::cout << VectorAsEquation(numbers) << Product(numbers) << std::endl;
+	  numbers = {3, 4, 5};
+	  std::cout << VectorAsEquation(numbers) << Product(numbers) << std::endl;
 
 
-	numbers = {};
-	for (int i = 5; i < 11; i++) {
-		numbers.push_back(i);
-	}
-	std::cout << VectorAsEquation(numbers) << Product(numbers) << std::endl;
+	  numbers = {};
+	  for (int i = 5; i < 11; i++) {
+		  numbers.push_back(i);
+	   }
+	  std::cout << VectorAsEquation(numbers) << Product(numbers) << std::endl;
+    std::string whole = "Hello Friend";
+    std::string separator = "blah";
+    std::vector<std::string> result = Split(whole, separator); //check case where delimiter is not in string
+
+    for (int i = 0; i<result.size(); i++){
+    	std::cout<<result[i]<<std::endl;
+    }
+    
+    std::string separator2 = "Fr";
+    std::vector<std::string> result2 = Split(whole, separator2);//case where delimiter is in string
+
+    for (int i = 0; i<result2.size(); i++){
+    	std::cout<<result2[i]<<std::endl;
+    }
 }
