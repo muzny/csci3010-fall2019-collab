@@ -20,6 +20,7 @@ int Product(std::vector<int> nums) {
 	}
 
 	return product;
+}
 
 // Implement your functions here. Don't forget function comments!
 // Splits a single string on separator into a vector of strings
