@@ -1,4 +1,5 @@
 #define CATCH_CONFIG_MAIN
+#include "UtilityFunctions.h"
 
 #include "catch.hpp"
 #include <iostream>
