@@ -12,9 +12,11 @@ int main() {
  
     nums3.push_back(10);
     nums2.push_back(-10);
-    cout<<Sum(nums);
-    cout<<Sum(nums2);
-    cout<<Sum(nums3);
+    
+    cout<<"Print the sum of our vectors: "<<endl;
+    cout<<Sum(nums)<<endl;
+    cout<<Sum(nums2)<<endl;
+    cout<<Sum(nums3)<<endl;
     
     return 0;
 }
