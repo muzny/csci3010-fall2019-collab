@@ -12,7 +12,7 @@ public:
     Library();
 
     void Donate(Book b);
-
+    void TakeInventory();
     void PrintBooks();
 
 private:
