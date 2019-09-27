@@ -2,7 +2,6 @@
 #include "catch.hpp"
 
 #include "UtilityFunctions.h"
-
 vector<int> test_vector = {1, 2, 3, 4};
 int greater_than = 3;
 vector<bool> correct_vector = {false, false, false, true};

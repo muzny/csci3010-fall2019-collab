@@ -18,4 +18,3 @@ main: UtilityFunctions.o main.cpp
 
 UtilityFunctions.o: UtilityFunctions.cpp
 	$(CXX) $(CXXFLAGS) -c UtilityFunctions.cpp
-	$(CXX) $(CXXFLAGS) -c UtilityFunctions.cpp

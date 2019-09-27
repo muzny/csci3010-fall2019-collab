@@ -22,3 +22,5 @@ vector<bool> GreaterMask(vector<int> nums, int greater_than){
     // returning bool vector
     return true_or_false;
 }
+
+// Implement your functions here. Don't forget function comments!
