@@ -22,3 +22,11 @@ void Library::PrintBooks() {
 		std::cout << b.title << " by " << b.author << std::endl;
 	}
 }
+
+void Library::CheckoutBook(Book b) {
+	for (int i = 0 ; i < sizeof(shelf_); i++) {
+		if (shelf_[i].title == b.title && shelf_[i].author == b.author) {
+			shelf_.erase(shelf_.begin() + i);
+		}
+	}
+}
