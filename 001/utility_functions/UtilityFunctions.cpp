@@ -1,4 +1,5 @@
 #include "UtilityFunctions.h"
+#include <vector>
 
 #include <iostream>
 #include <vector>
@@ -20,9 +21,25 @@ int Product(std::vector<int> nums) {
 	}
 
 	return product;
-}
+};
 
-// Implement your functions here. Don't forget function comments!
+
+// samKoulermos
+// takes two vectors of integers, a and b. The function then removes elements from a if they are also in b.
+// If the integer is in b, but not in a, nothing happens.
+std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
+	for (auto j = b.begin(); j != b.end(); ++j){
+		for (auto i = a.begin(); i != a.end(); ++i) { 
+			if (*i == *j) { 
+				a.erase(i); 
+				i--; 
+			} 
+		} 
+	}
+	return a;
+};
+
+
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator){
 	std::vector<std::string> return_string;
@@ -53,4 +70,4 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return_string.push_back(whole.substr(delim, whole.size()));
 		return return_string;
 	}
-}
+};
