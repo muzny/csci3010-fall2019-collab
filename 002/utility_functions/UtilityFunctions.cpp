@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Implement your functions here. Don't forget function comments!
+// Created function which subtracts a double value from all doubles inside a vector
 vector<double> SubtractN(vector<double> input, double n)
 {
   vector<double> retVect; //this is the vector ultimately being returned from the function
