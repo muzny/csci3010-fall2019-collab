@@ -8,9 +8,20 @@
 /**
 	Zero argument constructor initializes a library with a shelf but no books.
 */
-Library::Library() {
+Library::Library() { // created by cory-aaron group
 	std::vector<Book> tmp;
-	shelf_ = tmp;  // initialize my shelf
+	Book a,b,c;
+	a.title=("The Shining");
+	a.author=("Stephen King");
+	b.title=("Quantum Mechanics");
+	b.author=("David H. Mcintyre");
+	c.title=("Introduction to Elementary Particles");
+	c.author=("David Griffiths");
+	tmp.push_back(a);
+	tmp.push_back(b);
+	tmp.push_back(c);
+	shelf_ = tmp;  // initialize my shelf;
+      
 }
 
 void Library::Donate(Book b) {
