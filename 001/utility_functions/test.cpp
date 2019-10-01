@@ -21,6 +21,7 @@ TEST_CASE( "RemoveTwos returns the original int divided by 2 until it can no lon
         REQUIRE( RemoveTwos(16) == 1 );
         REQUIRE( RemoveTwos(6) == 3 );
     }
+}
 
 TEST_CASE( "integer sign is reported back", "[int]" ) {
 
