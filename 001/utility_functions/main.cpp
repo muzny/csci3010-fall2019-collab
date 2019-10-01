@@ -4,6 +4,7 @@
 #include <string>
 #include <fstream>
 
+
 /**
     Returns the given vector formatted as an equation multiplying each element.
 
@@ -25,6 +26,7 @@ std::string VectorAsEquation(std::vector<int> v) {
     return print_message + " = ";
 }
 
+
 int main() {
     // the main function should have demonstrations
     // of running your functions.
@@ -34,6 +36,12 @@ int main() {
     std::cout<<"RemoveTwos(16): "<<RemoveTwos(16)<<std::endl;
     std::cout<<"RemoveTwos(26): "<<RemoveTwos(26)<<std::endl;
     std::cout<<"RemoveTwos(52): "<<RemoveTwos(52)<<std::endl;
+
+    std::cout<< "Reading in 6, expecting positive (1): "<< Sign(6) << std::endl;
+    std::cout<< "Reading in 56, expecting positive (1); "<< Sign(56) << std::endl;
+    std::cout<< "Reading in -2, expecting negative (-1): "<< Sign(-2) << std::endl;
+    std::cout<< "Reading in 0, expecting positive (1): "<< Sign(0) << std::endl;
+
 
     std::vector<int> numbers;
     std::cout << VectorAsEquation(numbers) << Product(numbers) << std::endl;
@@ -64,4 +72,5 @@ int main() {
     for (int i = 0; i<result2.size(); i++){
     	std::cout<<result2[i]<<std::endl;
     }
+
 }
