@@ -9,6 +9,48 @@
 // Each TEST_CASE should test one function
 
 // Each SECTION should test one aspect of that function
+//Sam Koulermos
+TEST_CASE( "vectors can have elements removed based on another vector", "[vector]" ) {
+
+    std::vector<int> v1;
+	for (int i = 0; i < 5; i++) //create an int vector {0,1,2,3,4}
+        v1.push_back(i);
+	
+	std::vector<int> v2;
+	v2.push_back(5);
+	v2.push_back(4); //create a second int vector {5,4}
+	
+	std::vector<int> v3;
+	v3.push_back(1);
+	v3.push_back(3); //create a third int vector {1,3}
+        
+    REQUIRE( v1.size() == 5 );
+	REQUIRE( v2.size() == 2 );//some basic tests 
+	REQUIRE( v3.size() == 2 );
+	for (int i = 0; i < 5; i++)
+		REQUIRE( v1[i] == i);
+
+    SECTION( "remove {4,5} from v1" ) {
+        std::vector<int> v_test;
+		v_test = MatchVectors(v1,v2); //should be {0,1,2,3}
+
+        REQUIRE( v_test.size() == 4 );
+        REQUIRE( v_test[0] == 0 );
+		REQUIRE( v_test[1] == 1 );
+		REQUIRE( v_test[2] == 2 );
+		REQUIRE( v_test[3] == 3 );
+    }
+    SECTION( "remove {1,3} from v1" ) {
+        std::vector<int> v_test;
+		v_test = MatchVectors(v1,v3); //should be {0,2,4}
+
+        REQUIRE( v_test.size() == 3 );
+        REQUIRE( v_test[0] == 0 );
+		REQUIRE( v_test[1] == 2 );
+		REQUIRE( v_test[2] == 4 );
+    }
+}
+
 TEST_CASE( "product of a vector can be correctly calculated", "[product]" ) {
 
     std::vector<int> v;
