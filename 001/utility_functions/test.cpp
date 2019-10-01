@@ -24,6 +24,8 @@ TEST_CASE( "integer sign is reported back", "[int]" ) {
     }
     SECTION( "testing zero" ) {
       REQUIRE( Sign(0) == 1 ); //return 1
+     }
+}
 
 //Sam Koulermos
 TEST_CASE( "vectors can have elements removed based on another vector", "[vector]" ) {
