@@ -6,9 +6,9 @@
 
 
 /**
-	Zero argument constructor initializes a library with a shelf but no books.
+	Zero argument constructor initializes a library with a shelf and three books.
 */
-Library::Library() { // created by cory-aaron group
+Library::Library() { // created by aaronm
 	std::vector<Book> tmp;
 	Book a,b,c;
 	a.title=("The Shining");
