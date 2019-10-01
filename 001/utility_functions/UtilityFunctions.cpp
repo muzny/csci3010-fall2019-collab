@@ -7,6 +7,12 @@ This is our utility function file. I have a function that take in a vector of in
 all the elements in the vector and adds them all up and it returns the sum of the vector.
 */
 
+/**
+    Return an int which is the sum of our vector.
+
+    @param  an int vector.
+    @return an int.
+*/
 int Sum(vector<int> nums){
      
     int sum = 0;
