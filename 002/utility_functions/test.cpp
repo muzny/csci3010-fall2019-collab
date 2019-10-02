@@ -15,7 +15,7 @@ TEST_CASE("return 1 if positive and -1 if negative","[Sign]"){
     REQUIRE(Sign(0)==0);
     SECTION("Test with positive values") {
         REQUIRE(Sign(2)==1);
-        REQUIRE(Sign(-5)==1);
+        REQUIRE(Sign(5)==1);
         REQUIRE(Sign(1)==1);
     }
     SECTION("Test with negative values ") {
