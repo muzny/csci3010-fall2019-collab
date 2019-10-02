@@ -18,3 +18,11 @@ TEST_CASE ( "Vector is working.") {
 // Your tests go here
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
+vector<double> test_vector = {1, 2, 3, 4};
+
+vector<double> test_vector2 = {1, 2, 3, 4};
+TEST_CASE ("Product is working") {
+
+
+
+}

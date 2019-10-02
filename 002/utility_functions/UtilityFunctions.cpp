@@ -24,3 +24,11 @@ vector<bool> GreaterMask(vector<int> nums, int greater_than){
 }
 
 // Implement your functions here. Don't forget function comments!
+double Product(std::vector<double> num){
+	double total = 1;
+	for (auto&& x : num){
+	total *= x;
+	
+	}
+	return total;
+}
