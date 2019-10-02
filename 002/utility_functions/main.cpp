@@ -23,10 +23,11 @@ int main()
     // make sure that the output is easily interpretable.
     // If you'd like to define helper functions in this file,
     // you are welcome to do so!
-<<<<<<< HEAD
-    int Sign(2);
-    int Sign (-3);
-=======
+    
+    int a=2;
+    int Sign(a);
+   // int Sign (-3);
+
 
 
     //Create and add elements to vector
@@ -68,6 +69,4 @@ int main()
     cout << endl;
     cout << endl;
 
-
->>>>>>> master
 }
