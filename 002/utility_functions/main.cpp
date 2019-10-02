@@ -1,29 +1,16 @@
-// Max Macaluso
-// LE8
-
-// To see what Catch2 (Tests) outputs:
-//     make
-//     ./test 
-
-// To output contents in main:
-//     g++ -std=c++11 main.cpp UtilityFunctions.cpp 
-//     ./a.out
-
-
 #include "UtilityFunctions.h"
 #include <iostream>
-#include <string>
-
+#include <vector>
 using namespace std;
 
-int main() 
+int main()
 {
     // the main function should have demonstrations
     // of running your functions.
     // make sure that the output is easily interpretable.
     // If you'd like to define helper functions in this file,
     // you are welcome to do so!
-    
+
     int a=2;
     int Sign(a);
    // int Sign (-3);

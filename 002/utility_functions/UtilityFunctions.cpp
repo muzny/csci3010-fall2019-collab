@@ -1,5 +1,8 @@
 //Alden Maben
 #include "UtilityFunctions.h"
+#include <iostream>
+#include <vector>
+using namespace std;
 
 //  This function will take any integer and will return 1 if the value is positive, -1 if the value is negative, and 0 if the value is 0
 int Sign (int num){
@@ -15,3 +18,5 @@ int Sign (int num){
         return 0;
     }
 }
+
+// Implement your functions here. Don't forget function comments!
