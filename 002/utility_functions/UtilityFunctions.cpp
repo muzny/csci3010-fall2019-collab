@@ -1,3 +1,4 @@
+//Alden Maben
 #include "UtilityFunctions.h"
 
 //  This function will take any integer and will return 1 if the value is positive, -1 if the value is negative, and 0 if the value is 0
