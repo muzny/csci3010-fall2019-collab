@@ -24,3 +24,13 @@ vector<bool> GreaterMask(vector<int> nums, int greater_than){
 }
 
 // Implement your functions here. Don't forget function comments!
+
+// adds n to each element of the vector
+std::vector<std::string> AddN(std::vector<std::string> invector, std::string n){
+	//Iterate throught the vector and add n to each entry
+	for (int i = 0; i<invector.size(); i++){
+		invector[i]= invector[i]+n;
+	}
+	//return the modified vector. 
+	return invector;
+}
