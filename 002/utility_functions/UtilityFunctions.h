@@ -1,13 +1,12 @@
 #ifndef UTILITYFUNCTIONS_H
 #define UTILITYFUNCTIONS_H
 
+// put the declarations of your utility functions here.
+// they should not be in a class.
+#include <iostream>
 #include <vector>
 using namespace std;
 
-// put the declarations of your utility functions here.
-// they should not be in a class.
-
-// subtracts n to each element of the vector
-vector<int> SubtractN(vector<int> vec, int n);
+vector<bool> GreaterMask(vector<int> nums, int greater_than);
 
 #endif
