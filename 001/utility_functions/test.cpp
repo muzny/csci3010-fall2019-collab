@@ -29,6 +29,7 @@ TEST_CASE( "For subTractN", "[vector]" ) {
         output = {};
         REQUIRE( SubtractN(v2, n) == output);
     }
+} //updated this 	
 
 TEST_CASE( "integer sign is reported back", "[int]" ) {
 
