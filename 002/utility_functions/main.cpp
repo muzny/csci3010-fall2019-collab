@@ -7,4 +7,6 @@ int main() {
     // make sure that the output is easily interpretable.
     // If you'd like to define helper functions in this file,
     // you are welcome to do so!
+    int Sign(2);
+    int Sign (-3);
 }
