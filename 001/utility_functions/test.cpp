@@ -61,7 +61,7 @@ TEST_CASE( "Testing that Entire Vector is Multiplied Correctly with VectorTimesN
 TEST_CASE("VectorPlusN", "[vectorplusn]")
 {
   std::vector<double> v = {1, 2, 3};
-
+}
 
 TEST_CASE("Testing odd or even", "[EvenMask]"){
 	SECTION ("Testing a combination"){
