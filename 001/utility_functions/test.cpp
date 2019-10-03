@@ -9,6 +9,16 @@
 
 // Each SECTION should test one aspect of that function
 
+TEST_CASE( "Testing the Sum function by checking that it returns the proper sum for a vector containing the numbers 1 through 10."){
+  std::vector<double> nums;
+
+  for(int i = 1; i < 11; i++) {
+    nums.push_back(i);
+  }
+  REQUIRE(Sum(nums) == 55);
+  nums.clear()
+}
+
 TEST_CASE( "Testing that Entire Vector is Multiplied Correctly with VectorTimesN Function", "[VectorTimesN]" ) {
   std::vector<int> n;
   //Fill a large vector to check that every element is hit
