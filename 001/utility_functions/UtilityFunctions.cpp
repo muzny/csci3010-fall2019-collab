@@ -1,5 +1,6 @@
 #include "UtilityFunctions.h"
 
+
 #include <math.h>       
 
 // Implement your functions here. Don't forget function comments!
@@ -7,8 +8,32 @@
 
 
 #include <iostream>
+
 #include <vector>
+#include <iostream>
 #include <string>
+
+/*
+This function says whether or not a vector of its is even or odd 
+
+@param: a vector if type ints 
+@returns: a vector of bools 
+
+*/
+std::vector<bool>  EvenMask(std::vector<int>V){
+	std::vector <bool> temp;
+for (int i=0; i<V.size(); i++){
+	if (V[i]%2==0){
+		temp.push_back(true);	
+	}
+	else {
+		temp.push_back(false);
+	}
+}
+return temp; 
+
+}
+
 
 // This function takes in an integer, and divides it by two as many times as possible
 // The resulting value is returned
@@ -18,6 +43,7 @@ int RemoveTwos(int original){
     }
     return original;
 }
+
 
 /**
     Returns the product the elements in a vector.
@@ -55,18 +81,13 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 
 // Implement your functions here. Don't forget function comments!
 
-/**
-<<<<<<< HEAD
-    Returns the factorial of @param n
-
-=======
 /*
 Function that returns n! or n factoral.
 
 @param n is the number you want to be factoraled
 @returns an int of your input number factoraled lol
 	returns -1 if @param n < 0
->>>>>>> dana-lucas
+
 */
 int Factorial(int n)
 {
@@ -94,9 +115,7 @@ int Factorial(int n)
 	}
 }
 
-/**
-=======
-
+/*
     Multiplies each entry within a given vector by a given integer and saves
     the new values to a new vector to return
 
@@ -112,7 +131,6 @@ std::vector<int> VectorTimesN(std::vector<int> v, int n) {
 }
 
 /*
->>>>>>> 69d15d9cdd813049a3c568432105896d75efefd1
   SubtractN - Subtracts the value of the parameter int n from every element in vector v
   @vector v - a vector that is being passed-in, @int n is the value to subtract from each element
   @returns a modified vector v
@@ -167,6 +185,7 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 
 
 }
+
 
 
 /* Function: VectorPlusN
