@@ -1,18 +1,26 @@
 #include "UtilityFunctions.h"
+
 #include <math.h>       
 
 // Implement your functions here. Don't forget function comments!
 
 
-#include <vector>
 
 #include <iostream>
 #include <vector>
 #include <string>
 
+// This function takes in an integer, and divides it by two as many times as possible
+// The resulting value is returned
+int RemoveTwos(int original){
+    while(original % 2 == 0){
+        original = original / 2;
+    }
+    return original;
+}
+
 /**
     Returns the product the elements in a vector.
-
     @param nums The vector for which to calculate a product.
     @return The product.
 */
@@ -34,12 +42,12 @@ int Product(std::vector<int> nums) {
 // If the integer is in b, but not in a, nothing happens.
 std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 	for (auto j = b.begin(); j != b.end(); ++j){
-		for (auto i = a.begin(); i != a.end(); ++i) { 
-			if (*i == *j) { 
-				a.erase(i); 
-				i--; 
-			} 
-		} 
+		for (auto i = a.begin(); i != a.end(); ++i) {
+			if (*i == *j) {
+				a.erase(i);
+				i--;
+			}
+		}
 	}
 	return a;
 }
@@ -47,12 +55,18 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 
 // Implement your functions here. Don't forget function comments!
 
+/**
+<<<<<<< HEAD
+    Returns the factorial of @param n
+
+=======
 /*
 Function that returns n! or n factoral.
 
 @param n is the number you want to be factoraled
 @returns an int of your input number factoraled lol
 	returns -1 if @param n < 0
+>>>>>>> dana-lucas
 */
 int Factorial(int n)
 {
@@ -79,6 +93,37 @@ int Factorial(int n)
 		return returnThis;
 	}
 }
+
+/**
+=======
+
+    Multiplies each entry within a given vector by a given integer and saves
+    the new values to a new vector to return
+
+    @param a vector of integers and the integer to multiply each entry in the vector by
+    @return a vector with the resulting values
+*/
+std::vector<int> VectorTimesN(std::vector<int> v, int n) {
+  std::vector<int> return_vec;
+  for(int i = 0; i < v.size(); i++) {
+    return_vec.push_back(v[i] * n);
+  }
+  return return_vec;
+}
+
+/*
+>>>>>>> 69d15d9cdd813049a3c568432105896d75efefd1
+  SubtractN - Subtracts the value of the parameter int n from every element in vector v
+  @vector v - a vector that is being passed-in, @int n is the value to subtract from each element
+  @returns a modified vector v
+*/
+std::vector<int> SubtractN(std::vector<int> v, int n){
+    for(unsigned int i = 0; i < v.size(); i++){
+      v[i] = v[i] - n;
+    }
+    return v;
+}
+
 // returns -1 if the number is negative and 1 if positive
 // 0 returns positive because it takes up positive mem space- the abs of min int in c++ is one more than the max
 int Sign(int num){
@@ -105,7 +150,7 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 				delim = i;
 				break;
 			}
-			
+
 		}
 	}
 	if (delim==100){
@@ -118,4 +163,47 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return_string.push_back(whole.substr(delim, whole.size()));
 		return return_string;
 	}
+
+
+
+}
+
+
+/* Function: VectorPlusN
+   Parameters: A vector (v) to add a double (n) to each element
+   Returns: A new vector updated with each of the numbers
+*/
+
+std::vector<double> VectorPlusN(std::vector<double> v, double n) {
+	std::vector<double> plus_n;
+	for (size_t i = 0; i < v.size(); i ++) {
+		double val = v[i] + n;
+		plus_n.push_back(val);
+	}
+	return plus_n;
+}
+
+/**
+Oceane Andreis & Mikayla Pickett
+
+This is our utility function file. I have a function that take in a vector of ints and the function goes through
+all the elements in the vector and adds them all up and it returns the sum of the vector.
+*/
+
+/**
+    Return an int which is the sum of our vector.
+
+    @param  an int vector.
+    @return an int.
+*/
+int Sum(std::vector<int> nums){
+
+    int sum = 0;
+
+    for(unsigned int i = 0; i < nums.size(); i++)
+    {
+        sum+=nums[i];
+    }
+    return sum;
+
 }

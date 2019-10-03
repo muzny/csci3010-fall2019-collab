@@ -1,4 +1,7 @@
 #include "UtilityFunctions.h"
+
+
+
 #include <iostream>
 
 #include <vector>
@@ -14,7 +17,7 @@
 */
 std::string VectorAsEquation(std::vector<int> v) {
 	std::string print_message;
-	
+
 	if (v.size() == 0) {
 		return	print_message + "empty vector = ";
 	}
@@ -27,13 +30,67 @@ std::string VectorAsEquation(std::vector<int> v) {
     return print_message + " = ";
 }
 
-int main() 
-{
+
+
+/**
+Oceane Andreis & Mikayla Pickett
+This is our main file. We declared a few vectors of different size to see how our function would work.
+We made sure to also try it by adding a number to our vector and then getting the sum of the vector with that new number.
+
+*/
+
+
+int main() {
+
+    std::vector<int> nums = {0,1,2,3,4,10};
+    std::vector<int> nums2 = {2,3,4,10};
+    std::vector<int> nums3 = {200,10};
+
+    nums3.push_back(10);
+    nums2.push_back(-10);
+
+    std::cout<<"Print the sum of our vectors: "<<std::endl;
+    std::cout<<"1st Vector: ";
+    std::cout<<Sum(nums)<<std::endl;
+    std::cout<<"2nd Vector: ";
+    std::cout<<Sum(nums2)<<std::endl;
+    std::cout<<"3rd Vector: ";
+    std::cout<<Sum(nums3)<<std::endl;
+
     // the main function should have demonstrations
     // of running your functions.
     // make sure that the output is easily interpretable.
     // If you'd like to define helper functions in this file,
     // you are welcome to do so!
+    std::vector<int> a = {1, 2, 3, 4, 5, 6};
+    std::cout << "Demonstration of VectorTimesN Function:\n Vector before multiplication:\n [";
+    for(int i = 0; i < a.size(); i++) {
+      std::cout << a[i];
+      if(i != a.size() - 1) {
+        std::cout << ", ";
+      }
+    }
+    std::cout << "]\n";
+    std::vector<int> b = VectorTimesN(a, 3);
+    std::cout << "New vector after multiplication by 3:\n [";
+    for(int i = 0; i < b.size(); i++) {
+      std::cout << b[i];
+      if(i != b.size() - 1) {
+        std::cout << ", ";
+      }
+    }
+    std::cout << "]\n";
+    a.clear();
+    b.clear();
+
+    std::vector<double> plus_n_example = {4, 5, 6};
+    std::vector<double> new_vector = VectorPlusN(plus_n_example, 4);
+    std::cout << "Vector Before Addition: " << plus_n_example[0] << " " << plus_n_example[1] << " " << plus_n_example[2] << std::endl;
+    std::cout << "Vector After Addition: " << new_vector[0] << " " << new_vector[1] << " " << new_vector[2] << std::endl;
+
+    std::cout<<"RemoveTwos(16): "<<RemoveTwos(16)<<std::endl;
+    std::cout<<"RemoveTwos(26): "<<RemoveTwos(26)<<std::endl;
+    std::cout<<"RemoveTwos(52): "<<RemoveTwos(52)<<std::endl;
 
 	int factorial_this = 4;
     std::cout<<"This is our factorial function!"<<std::endl;
@@ -70,7 +127,7 @@ int main()
     for (int i = 0; i<result.size(); i++){
     	std::cout<<result[i]<<std::endl;
     }
-    
+
     std::string separator2 = "Fr";
     std::vector<std::string> result2 = Split(whole, separator2);//case where delimiter is in string
 
@@ -78,4 +135,5 @@ int main()
     	std::cout<<result2[i]<<std::endl;
     }
 
+  return 0;
 }
