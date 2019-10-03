@@ -51,6 +51,26 @@ TEST_CASE( "Testing that Entire Vector is Multiplied Correctly with VectorTimesN
     n.clear();
     m.clear();
   }
+
+TEST_CASE("VectorPlusN", "[vectorplusn]")
+{
+  std::vector<double> v = {1, 2, 3};
+
+  SECTION("should add 3 to each value of the vector") {
+  	  std::vector<double> expected = {4, 5, 6};
+      REQUIRE(VectorPlusN(v, 3) == expected); 
+   }
+
+   SECTION("should not change vector if 0 value is passed") {
+      REQUIRE(VectorPlusN(v, 0) == v);
+
+   }
+
+   SECTION("should subtract 4 from each value of the vector") {
+   	  std::vector<double> expected = {-3, -2, -1};
+      REQUIRE(VectorPlusN(v, -4) == expected);
+
+   }
 }
 TEST_CASE( "For subTractN", "[vector]" ) {
   //Jake Henson 
