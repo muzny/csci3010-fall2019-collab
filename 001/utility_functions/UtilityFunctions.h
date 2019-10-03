@@ -9,6 +9,10 @@ std::vector<int> SubtractN(std::vector<int> v, int n);
 #include <string>
 #include <iostream>
 
+// Matthias Bruski
+// This function adds together all double type numbers in a vector and returns the result
+double Sum(std::vector<double> nums);
+
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
 int RemoveTwos(int original);

@@ -3,6 +3,21 @@
 #include <vector>
 #include <string>
 
+//=======================================================================================================
+/*
+Matthias Bruski
+Sigma/sum function that adds together all entries of double type vector and returns their sum
+*/
+double Sum(std::vector<double> nums){
+  double sum = 0;
+  std::vector<double>::iterator i; // vector iterator
+  for (i = nums.begin(); i != nums.end(); i++){ //loops through vector and adds each entry to the sum
+    sum += *i;
+  }
+  return sum; // returns sum
+}
+//=======================================================================================================
+
 // This function takes in an integer, and divides it by two as many times as possible
 // The resulting value is returned
 int RemoveTwos(int original){
