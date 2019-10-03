@@ -11,20 +11,24 @@
 
 
 
-#include <vector> 
+#include <vector>
 #include <string>
 #include <iostream>
+
+
+// Matthias Bruski
+// This function adds together all double type numbers in a vector and returns the result
+double Sum(std::vector<double> nums);
+
 /**
     Returns the factorial of @param n
-
-
 */
 int Factorial(int n);
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
 std::vector<bool> EvenMask(std::vector<int>V);
 std::vector<int> VectorTimesN(std::vector<int> v, int n);
-std::vector<int> SubtractN(std::vector<int> v, int n);
+
 
 int RemoveTwos(int original);
 
@@ -48,4 +52,3 @@ int Product(std::vector<int> nums);
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 int Sum(std::vector<int> input);
-

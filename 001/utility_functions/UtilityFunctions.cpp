@@ -1,7 +1,7 @@
 #include "UtilityFunctions.h"
 
 
-#include <math.h>       
+#include <math.h>
 
 // Implement your functions here. Don't forget function comments!
 
@@ -13,24 +13,40 @@
 #include <iostream>
 #include <string>
 
-/*
-This function says whether or not a vector of its is even or odd 
 
-@param: a vector if type ints 
-@returns: a vector of bools 
+//=======================================================================================================
+/*
+Matthias Bruski
+Sigma/sum function that adds together all entries of double type vector and returns their sum
+*/
+double Sum(std::vector<double> nums){
+  double sum = 0;
+  std::vector<double>::iterator i; // vector iterator
+  for (i = nums.begin(); i != nums.end(); i++){ //loops through vector and adds each entry to the sum
+    sum += *i;
+  }
+  return sum; // returns sum
+}
+//=======================================================================================================
+
+/*
+This function says whether or not a vector of its is even or odd
+
+@param: a vector if type ints
+@returns: a vector of bools
 
 */
 std::vector<bool>  EvenMask(std::vector<int>V){
 	std::vector <bool> temp;
 for (int i=0; i<V.size(); i++){
 	if (V[i]%2==0){
-		temp.push_back(true);	
+		temp.push_back(true);
 	}
 	else {
 		temp.push_back(false);
 	}
 }
-return temp; 
+return temp;
 
 }
 
@@ -225,5 +241,5 @@ int Sum(std::vector<int> nums){
     }
     return sum;
 
-}
 
+}
