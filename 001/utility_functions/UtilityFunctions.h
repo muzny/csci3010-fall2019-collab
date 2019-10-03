@@ -10,9 +10,6 @@
 
 
 
-std::vector<bool> EvenMask(std::vector<int>V);
-std::vector<int> VectorTimesN(std::vector<int> v, int n);
-std::vector<int> SubtractN(std::vector<int> v, int n);
 
 #include <vector> 
 #include <string>
@@ -25,6 +22,9 @@ std::vector<int> SubtractN(std::vector<int> v, int n);
 int Factorial(int n);
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
+std::vector<bool> EvenMask(std::vector<int>V);
+std::vector<int> VectorTimesN(std::vector<int> v, int n);
+std::vector<int> SubtractN(std::vector<int> v, int n);
 
 int RemoveTwos(int original);
 
