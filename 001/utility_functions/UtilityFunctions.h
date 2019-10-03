@@ -29,3 +29,4 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 int Product(std::vector<int> nums);
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
+int Sum(std::vector<int> input);
