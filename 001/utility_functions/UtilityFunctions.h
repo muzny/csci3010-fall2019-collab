@@ -13,7 +13,8 @@
 // they should not be in a class.
 
 
-
+#include <vector>
+std::vector<int> Multiples(int n, int m);
 
 // put the declarations of your utility functions here.
 // they should not be in a class.
@@ -62,4 +63,5 @@ int Product(std::vector<int> nums);
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 int Sum(std::vector<int> input);
+
 

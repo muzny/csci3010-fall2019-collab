@@ -1,3 +1,4 @@
+#include <vector>
 #include "UtilityFunctions.h"
 
 
@@ -92,12 +93,24 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 
 // Implement your functions here. Don't forget function comments!
 
+
+std::vector<int> Multiples(int n, int m){
+    std::vector<int> answer;
+    for(int i = 0; i < m; i++){
+	answer.push_back(n*(i+1));
+    }
+    return answer;
+}
+
+/**
+
 /*
 Function that returns n! or n factoral.
 
 @param n is the number you want to be factoraled
 @returns an int of your input number factoraled lol
 	returns -1 if @param n < 0
+
 
 */
 int Factorial(int n)
@@ -237,4 +250,5 @@ int Sum(std::vector<int> nums){
     return sum;
 
 }
+
 

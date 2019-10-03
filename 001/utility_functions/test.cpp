@@ -5,9 +5,16 @@
 #include <vector>
 
 #include "UtilityFunctions.h"
+
+
+#include <vector>
+#include <limits>
+
+
 #include <string>
 #include <vector>
 #include <iostream>
+
 // Your tests go here
 // Each TEST_CASE should test one function
 
@@ -21,6 +28,31 @@ TEST_CASE("Subtraction is completed", "[subtractn]"){
 	
 	SECTION("Returning a vector with negative doubles"){
 		REQUIRE ( SubtractN(std::vector<double>{5,6,7,8,9}, 9) == std::vector<double>{-4, -3, -2, -1, 0});
+
+
+
+TEST_CASE( "Multiples are computed", "[multiple]" ) {
+    SECTION("Normal"){
+	std::vector<int> normal, edge, corner;
+        normal.push_back(5); 
+        normal.push_back(10);
+        normal.push_back(15);
+        REQUIRE( Multiples(5, 3) == normal );
+    }
+    SECTION("Others"){
+	std::vector<int> edge, corner;
+	int inf = std::numeric_limits<int>::infinity();
+        REQUIRE( Multiples(4, 0) == edge );
+        edge.push_back(inf);
+        edge.push_back(inf);
+        edge.push_back(inf);
+        edge.push_back(inf);
+	REQUIRE( Multiples(inf, 4) == edge );
+        REQUIRE( Multiples(12, -1) == corner );
+
+    }
+}
+
 TEST_CASE( "Testing that Entire Vector is Multiplied Correctly with VectorTimesN Function", "[VectorTimesN]" ) {
   std::vector<int> n;
   //Fill a large vector to check that every element is hit
