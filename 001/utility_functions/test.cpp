@@ -9,6 +9,7 @@
 // Each TEST_CASE should test one function
 
 // Each SECTION should test one aspect of that function
+
 TEST_CASE( "For subTractN", "[vector]" ) {
   //Jake Henson 
     std::vector<int> v = {5, 6, 7, 8, 9};
@@ -43,6 +44,24 @@ TEST_CASE( "RemoveTwos returns the original int divided by 2 until it can no lon
         REQUIRE( RemoveTwos(6) == 3 );
     }
 }
+TEST_CASE( "Check Factorial Function" ) 
+{
+    SECTION( "Check values from [0,4]" )
+    {
+        REQUIRE( Factorial(0) == 1 );
+        REQUIRE( Factorial(1) == 1 );
+        REQUIRE( Factorial(2) == 2 );
+        REQUIRE( Factorial(3) == 6 );
+        REQUIRE( Factorial(4) == 24 );
+    }
+    SECTION( "Check values from [-5,-3]" ) 
+    {
+        REQUIRE( Factorial(-5) == -1 );
+        REQUIRE( Factorial(-4) == -1 );
+        REQUIRE( Factorial(-3) == -1 );
+
+    }
+}
 
 TEST_CASE( "integer sign is reported back", "[int]" ) {
 
@@ -58,7 +77,7 @@ TEST_CASE( "integer sign is reported back", "[int]" ) {
     }
     SECTION( "testing zero" ) {
       REQUIRE( Sign(0) == 1 ); //return 1
-     }
+    }
 }
 
 //Sam Koulermos
