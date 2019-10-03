@@ -49,6 +49,17 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 
 // Implement your functions here. Don't forget function comments!
 
+/**
+  SubtractN - Subtracts the value of the parameter int n from every element in vector v
+  @vector v - a vector that is being passed-in, @int n is the value to subtract from each element
+  @returns a modified vector v 
+*/
+std::vector<int> SubtractN(std::vector<int> v, int n){
+    for(unsigned int i = 0; i < v.size(); i++){
+      v[i] = v[i] - n;
+    }
+    return v;
+}
 // returns -1 if the number is negative and 1 if positive
 // 0 returns positive because it takes up positive mem space- the abs of min int in c++ is one more than the max
 int Sign(int num){
