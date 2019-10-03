@@ -7,11 +7,9 @@
 // they should not be in a class.
 
 
+#include <vector>
+std::vector<int> Multiples(int n, int m);
 
-
-
-
-#include <vector> 
 #include <string>
 #include <iostream>
 /**
@@ -48,4 +46,5 @@ int Product(std::vector<int> nums);
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 int Sum(std::vector<int> input);
+
 
