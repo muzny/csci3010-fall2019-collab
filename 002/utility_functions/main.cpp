@@ -1,4 +1,6 @@
 #include "UtilityFunctions.h"
+#include "catch.hpp"
+#include <string>
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -10,4 +12,8 @@ int main() {
     for(int i=0; i < output_vector.size(); i++){
         cout << output_vector[i] << endl;
     }
+    
+    string str = "Hi this is Colin. Colin says Hi";
+    cout << RemoveFirstSubstring(str, "Colin") << endl;
 }
+

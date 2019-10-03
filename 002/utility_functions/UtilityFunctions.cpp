@@ -1,6 +1,7 @@
 #include "UtilityFunctions.h"
-#include <iostream>
 #include <vector>
+#include <string>
+#include <iostream>
 using namespace std;
 
 // Implement your functions here. Don't forget function comments!
@@ -23,4 +24,11 @@ vector<bool> GreaterMask(vector<int> nums, int greater_than){
     return true_or_false;
 }
 
-// Implement your functions here. Don't forget function comments!
+// takes two strings and returns a new string that is the result of removing the first occurrence of s2 from s1.
+string RemoveFirstSubstring(string s1, string s2){
+    int first_index = s1.find(s2); //First index of the instace of the sub string
+    if(first_index < 0){ // if there isn't an instance do nothing
+        return s1;
+    }
+    return s1.substr(0,first_index) + s1.substr(first_index+s2.size(),-1); // return the substring before and after the instance
+}
