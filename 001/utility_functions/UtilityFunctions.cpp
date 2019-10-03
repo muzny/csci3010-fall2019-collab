@@ -101,3 +101,8 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return return_string;
 	}
 };
+
+double Sign(double num){
+	if (num >= 0) { return 1.0; }
+	else { return -1.0; }
+}
