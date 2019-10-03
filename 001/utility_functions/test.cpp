@@ -51,6 +51,7 @@ TEST_CASE( "Testing that Entire Vector is Multiplied Correctly with VectorTimesN
     n.clear();
     m.clear();
   }
+}
 
 TEST_CASE("VectorPlusN", "[vectorplusn]")
 {
