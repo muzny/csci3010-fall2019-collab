@@ -1,6 +1,12 @@
 #include "UtilityFunctions.h"
 #include <vector>
-// Implement your functions here. Don't forget function comments!
+/*
+This function says whether or not a vector of its is even or odd 
+
+@param: a vector if type ints 
+@returns: a vector of bools 
+
+*/
 
 std::vector<bool>  EvenMask(std::vector<int>V){
 	std::vector <bool> temp;
