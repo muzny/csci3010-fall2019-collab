@@ -29,6 +29,7 @@ std::string VectorAsEquation(std::vector<int> v) {
 
 
 int main() {
+
     // the main function should have demonstrations
     // of running your functions.
     // make sure that the output is easily interpretable.
@@ -47,6 +48,12 @@ int main() {
 		std::cout << sub_vec[i] << " ";
 	}
 	std::cout << std::endl;
+
+    std::vector<double> plus_n_example = {4, 5, 6};
+    std::vector<double> new_vector = VectorPlusN(plus_n_example, 4);
+    std::cout << "Vector Before Addition: " << plus_n_example[0] << " " << plus_n_example[1] << " " << plus_n_example[2] << std::endl;
+    std::cout << "Vector After Addition: " << new_vector[0] << " " << new_vector[1] << " " << new_vector[2] << std::endl;
+
     std::cout<<"RemoveTwos(16): "<<RemoveTwos(16)<<std::endl;
     std::cout<<"RemoveTwos(26): "<<RemoveTwos(26)<<std::endl;
     std::cout<<"RemoveTwos(52): "<<RemoveTwos(52)<<std::endl;

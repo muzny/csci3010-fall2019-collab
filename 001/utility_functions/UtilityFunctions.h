@@ -18,6 +18,8 @@ std::vector<double> SubtractN(std::vector<double> vec, double n);
 
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
+std::vector<int> SubtractN(std::vector<int> v, int n);
+
 int RemoveTwos(int original);
 
 std::vector<std::string> Split(std::string whole, std::string separator);
@@ -38,3 +40,5 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
+
+std::vector<double> VectorPlusN(std::vector<double> v, double n);
