@@ -21,7 +21,6 @@ int RemoveTwos(int original){
 
 /**
     Returns the product the elements in a vector.
-
     @param nums The vector for which to calculate a product.
     @return The product.
 */
@@ -43,12 +42,12 @@ int Product(std::vector<int> nums) {
 // If the integer is in b, but not in a, nothing happens.
 std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 	for (auto j = b.begin(); j != b.end(); ++j){
-		for (auto i = a.begin(); i != a.end(); ++i) { 
-			if (*i == *j) { 
-				a.erase(i); 
-				i--; 
-			} 
-		} 
+		for (auto i = a.begin(); i != a.end(); ++i) {
+			if (*i == *j) {
+				a.erase(i);
+				i--;
+			}
+		}
 	}
 	return a;
 }
@@ -97,7 +96,7 @@ int Factorial(int n)
 /**
   SubtractN - Subtracts the value of the parameter int n from every element in vector v
   @vector v - a vector that is being passed-in, @int n is the value to subtract from each element
-  @returns a modified vector v 
+  @returns a modified vector v
 */
 std::vector<int> SubtractN(std::vector<int> v, int n){
     for(unsigned int i = 0; i < v.size(); i++){
@@ -132,7 +131,7 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 				delim = i;
 				break;
 			}
-			
+
 		}
 	}
 	if (delim==100){
@@ -145,6 +144,48 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return_string.push_back(whole.substr(delim, whole.size()));
 		return return_string;
 	}
+<<<<<<< HEAD
 
 }
 
+=======
+};
+
+/* Function: VectorPlusN
+   Parameters: A vector (v) to add a double (n) to each element
+   Returns: A new vector updated with each of the numbers
+*/
+
+std::vector<double> VectorPlusN(std::vector<double> v, double n) {
+	std::vector<double> plus_n;
+	for (size_t i = 0; i < v.size(); i ++) {
+		double val = v[i] + n;
+		plus_n.push_back(val);
+	}
+	return plus_n;
+}
+
+/**
+Oceane Andreis & Mikayla Pickett
+
+This is our utility function file. I have a function that take in a vector of ints and the function goes through
+all the elements in the vector and adds them all up and it returns the sum of the vector.
+*/
+
+/**
+    Return an int which is the sum of our vector.
+
+    @param  an int vector.
+    @return an int.
+*/
+int Sum(std::vector<int> nums){
+
+    int sum = 0;
+
+    for(unsigned int i = 0; i < nums.size(); i++)
+    {
+        sum+=nums[i];
+    }
+    return sum;
+}
+>>>>>>> 7e342fbbce7376016c693a1d204733a0315c48a4

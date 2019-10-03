@@ -5,10 +5,6 @@
 
 // put the declarations of your utility functions here.
 // they should not be in a class.
-//#include <vector>
-
-
-
 
 #include <vector>
 #include <string>
@@ -16,9 +12,12 @@
 /**
     Returns the factorial of @param n
 
+
 */
 int Factorial(int n);
 std::vector<int> SubtractN(std::vector<int> v, int n);
+
+
 int RemoveTwos(int original);
 
 std::vector<std::string> Split(std::string whole, std::string separator);
@@ -39,3 +38,5 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 int Product(std::vector<int> nums);
 
 
+std::vector<double> VectorPlusN(std::vector<double> v, double n);
+int Sum(std::vector<int> input);

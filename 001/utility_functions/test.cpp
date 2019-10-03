@@ -10,8 +10,28 @@
 
 // Each SECTION should test one aspect of that function
 
+TEST_CASE("VectorPlusN", "[vectorplusn]")
+{
+  std::vector<double> v = {1, 2, 3};
+
+  SECTION("should add 3 to each value of the vector") {
+  	  std::vector<double> expected = {4, 5, 6};
+      REQUIRE(VectorPlusN(v, 3) == expected);
+   }
+
+   SECTION("should not change vector if 0 value is passed") {
+      REQUIRE(VectorPlusN(v, 0) == v);
+
+   }
+
+   SECTION("should subtract 4 from each value of the vector") {
+   	  std::vector<double> expected = {-3, -2, -1};
+      REQUIRE(VectorPlusN(v, -4) == expected);
+
+   }
+}
 TEST_CASE( "For subTractN", "[vector]" ) {
-  //Jake Henson 
+  //Jake Henson
     std::vector<int> v = {5, 6, 7, 8, 9};
     std::vector<int> output = {0,1,2,3,4};
     int n = 5;
@@ -30,7 +50,7 @@ TEST_CASE( "For subTractN", "[vector]" ) {
         output = {};
         REQUIRE( SubtractN(v2, n) == output);
     }
-} //updated this 	
+} //updated this
 
 TEST_CASE( "RemoveTwos returns the original int divided by 2 until it can no longer be divided", "[removetwos]" ) {
 
@@ -86,17 +106,17 @@ TEST_CASE( "vectors can have elements removed based on another vector", "[vector
     std::vector<int> v1;
 	for (int i = 0; i < 5; i++) //create an int vector {0,1,2,3,4}
         v1.push_back(i);
-	
+
 	std::vector<int> v2;
 	v2.push_back(5);
 	v2.push_back(4); //create a second int vector {5,4}
-	
+
 	std::vector<int> v3;
 	v3.push_back(1);
 	v3.push_back(3); //create a third int vector {1,3}
-        
+
     REQUIRE( v1.size() == 5 );
-	REQUIRE( v2.size() == 2 );//some basic tests 
+	REQUIRE( v2.size() == 2 );//some basic tests
 	REQUIRE( v3.size() == 2 );
 	for (int i = 0; i < 5; i++)
 		REQUIRE( v1[i] == i);
@@ -155,4 +175,28 @@ TEST_CASE("Split string on separator", "[split]"){
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
 }
+std::vector<int> nums = {0,1,2,3,4,10};
+std::vector<int> nums2 = {2,3,4,10};
+std::vector<int> nums3 = {200,10};
 
+TEST_CASE("Test Addition", "[vector]")
+{
+  SECTION("Test with different numbers") {
+      REQUIRE(Sum(nums) == 20);
+      REQUIRE(Sum(nums2) == 19);
+      REQUIRE(Sum(nums3) == 210);
+
+  }
+
+  SECTION("Test add in a new number and then add") {
+      nums3.push_back(10);
+      REQUIRE(Sum(nums3) == 220);
+
+  }
+
+  SECTION("Test add a negative number and then add") {
+      nums3.push_back(-10);
+      REQUIRE(Sum(nums3) == 210);
+
+  }
+}
