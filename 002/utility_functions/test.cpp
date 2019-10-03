@@ -20,6 +20,3 @@ TEST_CASE( "combines vector to string with glue in between", "[vector]" ) {
     REQUIRE( Join(b, glue) == "wow this is COOOOOL");
   }
 }
-
-
-

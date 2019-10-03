@@ -1,3 +1,5 @@
 #include <vector>
+#include <iostream>
+using namespace std;
 
-std::string Join(std::vector<std::string> pieces, std::string glue);
+string Join(std::vector<string> pieces, string glue);

@@ -8,7 +8,7 @@ using namespace std;
 
 string Join(vector<string> pieces, string glue) {
   string s;
-  for (int i = 0; i < pieces.size(); i++){
+  for (int unsigned i = 0; i < pieces.size(); i++){
     if(i < pieces.size() - 1)
       s = s + pieces[i] + glue;
     else
