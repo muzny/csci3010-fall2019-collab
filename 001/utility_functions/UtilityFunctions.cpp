@@ -26,7 +26,7 @@ int Product(std::vector<int> nums) {
 	}
 
 	return product;
-};
+}
 
 
 // samKoulermos
@@ -42,7 +42,7 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 		} 
 	}
 	return a;
-};
+}
 
 
 // Implement your functions here. Don't forget function comments!
@@ -118,4 +118,4 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return_string.push_back(whole.substr(delim, whole.size()));
 		return return_string;
 	}
-};
+}
