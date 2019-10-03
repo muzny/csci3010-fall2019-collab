@@ -5,6 +5,7 @@
 
 
 #include <iostream>
+
 #include <vector>
 #include <string>
 #include <fstream>
@@ -40,24 +41,23 @@ We made sure to also try it by adding a number to our vector and then getting th
 
 */
 
-using namespace std;
 
 int main() {
 
-    vector<int> nums = {0,1,2,3,4,10};
-    vector<int> nums2 = {2,3,4,10};
-    vector<int> nums3 = {200,10};
+    std::vector<int> nums = {0,1,2,3,4,10};
+    std::vector<int> nums2 = {2,3,4,10};
+    std::vector<int> nums3 = {200,10};
 
     nums3.push_back(10);
     nums2.push_back(-10);
 
-    cout<<"Print the sum of our vectors: "<<endl;
-    cout<<"1st Vector: ";
-    cout<<Sum(nums)<<endl;
-    cout<<"2nd Vector: ";
-    cout<<Sum(nums2)<<endl;
-    cout<<"3rd Vector: ";
-    cout<<Sum(nums3)<<endl;
+    std::cout<<"Print the sum of our vectors: "<<std::endl;
+    std::cout<<"1st Vector: ";
+    std::cout<<Sum(nums)<<std::endl;
+    std::cout<<"2nd Vector: ";
+    std::cout<<Sum(nums2)<<std::endl;
+    std::cout<<"3rd Vector: ";
+    std::cout<<Sum(nums3)<<std::endl;
 
     // the main function should have demonstrations
     // of running your functions.
@@ -100,6 +100,13 @@ int main() {
     std::cout<<"RemoveTwos(16): "<<RemoveTwos(16)<<std::endl;
     std::cout<<"RemoveTwos(26): "<<RemoveTwos(26)<<std::endl;
     std::cout<<"RemoveTwos(52): "<<RemoveTwos(52)<<std::endl;
+
+	int factorial_this = 4;
+    std::cout<<"This is our factorial function!"<<std::endl;
+    std::cout<<"It takes an int such as ("<<factorial_this<<") and factorializes them"<<std::endl;
+    std::cout<<"("<<factorial_this<<")! is "<<Factorial(factorial_this)<<std::endl;
+    std::cout<<"Lets see what happens if we enter a negative number into Factorial: "<<Factorial(-10)<<std::endl;
+    std::cout<<"It returns -1 as the definition of a negative Factorial is not defined"<<std::endl;
 
     std::cout<< "Reading in 6, expecting positive (1): "<< Sign(6) << std::endl;
     std::cout<< "Reading in 56, expecting positive (1); "<< Sign(56) << std::endl;
