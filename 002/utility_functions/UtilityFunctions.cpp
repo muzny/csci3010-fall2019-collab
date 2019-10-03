@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Implement your functions here. Don't forget function comments!
+// Function that returns a vector with number n subtracted from each value in the vector
 vector<double> SubtractN(vector<double> input, double n)
 {
   vector<double> retVect; //this is the vector ultimately being returned from the function
