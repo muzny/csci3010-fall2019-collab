@@ -33,3 +33,12 @@ void Library::PrintBooks() {
 		std::cout << b.title << " by " << b.author << std::endl;
 	}
 }
+
+bool Library::Find(std::string name) {
+	for (Book b : shelf_) {
+		if (b.title.find(name) != std::string::npos) {
+			return true;
+		}
+	}
+	return false;
+}
