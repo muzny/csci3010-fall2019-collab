@@ -1,4 +1,16 @@
+#ifndef UTILITYFUNCTIONS_H
+#define UTILITYFUNCTIONS_H
+
+#include <iostream>
 #include <vector>
 #include <string>
+using namespace std;
 
-std::string RemoveFirstSubstring(std::string s1, std::string s2);
+// put the declarations of your utility functions here.
+// they should not be in a class.
+
+string RemoveFirstSubstring(string s1, string s2);
+
+vector<bool> GreaterMask(vector<int> nums, int greater_than);
+
+#endif
