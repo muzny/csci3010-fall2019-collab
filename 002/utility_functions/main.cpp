@@ -1,8 +1,7 @@
 #include "UtilityFunctions.h"
 #include <iostream>
 #include <vector>
-
-
+using namespace std;
 //https://www.techiedelight.com/print-vector-cpp/
 void print(std::vector<bool> const &input)
 {
@@ -16,9 +15,9 @@ void print(std::vector<bool> const &input)
 int main() {
     std::vector<int>vect{ 10, 3, 4, 5, 7, 20, 30 };
     print(OddMask(vect));
-    // the main function should have demonstrations
-    // of running your functions.
-    // make sure that the output is easily interpretable.
-    // If you'd like to define helper functions in this file,
-    // you are welcome to do so!
+    vector<int> test_vector = {1, 2, 3, 4};
+    vector<bool> output_vector;
+    output_vector = GreaterMask(test_vector, 3);
+        cout << output_vector[i] << endl;
+    }
 }
