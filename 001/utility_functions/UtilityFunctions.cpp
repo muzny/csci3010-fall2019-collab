@@ -4,6 +4,13 @@
 #include <string>
 
 /*
+This is an example function
+*/
+void Foo() {
+    std::cout << "hi";
+}
+
+/*
 This function says whether or not a vector of its is even or odd 
 
 @param: a vector if type ints 

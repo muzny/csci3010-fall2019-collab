@@ -3,13 +3,15 @@
 // they should not be in a class.
 
 #include <vector> 
+#include <string>
+#include <iostream>
+
+void Foo();
 
 std::vector<bool> EvenMask(std::vector<int>V);
 std::vector<int> VectorTimesN(std::vector<int> v, int n);
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
-#include <string>
-#include <iostream>
 
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
