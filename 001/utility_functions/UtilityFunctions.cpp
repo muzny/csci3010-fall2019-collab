@@ -1,9 +1,16 @@
 #include "UtilityFunctions.h"
-#include <vector>
-
 #include <iostream>
 #include <vector>
 #include <string>
+
+// This function takes in an integer, and divides it by two as many times as possible
+// The resulting value is returned
+int RemoveTwos(int original){
+    while(original % 2 == 0){
+        original = original / 2;
+    }
+    return original;
+}
 
 /**
     Returns the product the elements in a vector.
@@ -21,7 +28,7 @@ int Product(std::vector<int> nums) {
 	}
 
 	return product;
-};
+}
 
 
 // samKoulermos
@@ -37,12 +44,15 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 		} 
 	}
 	return a;
-};
+}
 
 
 // Implement your functions here. Don't forget function comments!
 
-<<<<<<< HEAD
+/**
+    Returns the factorial of @param n
+
+*/
 int Factorial(int n)
 {
 	int returnThis = 1;
@@ -52,7 +62,18 @@ int Factorial(int n)
 	}
 	return returnThis;
 }
-=======
+
+/**
+  SubtractN - Subtracts the value of the parameter int n from every element in vector v
+  @vector v - a vector that is being passed-in, @int n is the value to subtract from each element
+  @returns a modified vector v 
+*/
+std::vector<int> SubtractN(std::vector<int> v, int n){
+    for(unsigned int i = 0; i < v.size(); i++){
+      v[i] = v[i] - n;
+    }
+    return v;
+}
 // returns -1 if the number is negative and 1 if positive
 // 0 returns positive because it takes up positive mem space- the abs of min int in c++ is one more than the max
 int Sign(int num){
@@ -93,5 +114,5 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return_string.push_back(whole.substr(delim, whole.size()));
 		return return_string;
 	}
-};
->>>>>>> 66178334820a9bd48fcd8950bdf7742ab7892aca
+}
+

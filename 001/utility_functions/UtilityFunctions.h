@@ -1,12 +1,23 @@
-<<<<<<< HEAD
 // put the declarations of your utility functions here.
 // they should not be in a class.
 
-int Factorial(int n);
-=======
+
+// put the declarations of your utility functions here.
+// they should not be in a class.
+//#include <vector>
+
+
 #include <vector>
 #include <string>
 #include <iostream>
+/**
+    Returns the factorial of @param n
+
+*/
+int Factorial(int n);
+std::vector<int> SubtractN(std::vector<int> v, int n);
+int RemoveTwos(int original);
+
 std::vector<std::string> Split(std::string whole, std::string separator);
 
 
@@ -23,6 +34,4 @@ int Product(std::vector<int> nums);
 // If the integer is in b, but not in a, nothing happens.
 std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 
-// Multiplies all numbers in a vector together and returns the resulting value
-int Product(std::vector<int> nums);
->>>>>>> 66178334820a9bd48fcd8950bdf7742ab7892aca
+
