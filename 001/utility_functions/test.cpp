@@ -156,7 +156,6 @@ TEST_CASE("Split string on separator", "[split]"){
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
 }
-
 std::vector<int> nums = {0,1,2,3,4,10};
 std::vector<int> nums2 = {2,3,4,10};
 std::vector<int> nums3 = {200,10};
