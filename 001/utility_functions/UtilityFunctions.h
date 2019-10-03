@@ -7,12 +7,14 @@
 // they should not be in a class.
 
 
-#include <vector> 
+
+
 
 std::vector<bool> EvenMask(std::vector<int>V);
 std::vector<int> VectorTimesN(std::vector<int> v, int n);
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
+#include <vector> 
 #include <string>
 #include <iostream>
 /**

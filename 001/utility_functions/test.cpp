@@ -63,6 +63,7 @@ TEST_CASE("VectorPlusN", "[vectorplusn]")
   std::vector<double> v = {1, 2, 3};
 }
 
+
 TEST_CASE("Testing odd or even", "[EvenMask]"){
 	SECTION ("Testing a combination"){
 		std::vector<int> check1 = {1,2,3,4,5,6,7,8,9};
