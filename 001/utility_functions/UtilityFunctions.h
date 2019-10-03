@@ -7,6 +7,10 @@
 // they should not be in a class.
 
 #include <vector>
+
+std::vector<int> VectorTimesN(std::vector<int> v, int n);
+std::vector<int> SubtractN(std::vector<int> v, int n);
+
 #include <string>
 #include <iostream>
 /**
