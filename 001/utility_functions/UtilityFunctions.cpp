@@ -1,4 +1,14 @@
 #include "UtilityFunctions.h"
+
+
+#include <math.h>       
+
+// Implement your functions here. Don't forget function comments!
+
+
+
+#include <iostream>
+
 #include <vector>
 #include "catch.hpp"
 #include <iostream>
@@ -61,7 +71,7 @@ int Product(std::vector<int> nums) {
 	}
 
 	return product;
-};
+}
 
 
 // samKoulermos
@@ -77,13 +87,46 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 		}
 	}
 	return a;
-};
+}
 
 
 // Implement your functions here. Don't forget function comments!
 
-/**
+/*
+Function that returns n! or n factoral.
 
+@param n is the number you want to be factoraled
+@returns an int of your input number factoraled lol
+	returns -1 if @param n < 0
+
+*/
+int Factorial(int n)
+{
+	int returnThis;
+	if (n < 0)
+	{
+		return -1;
+	}
+	else
+	{
+		if (n == 0)
+		{
+			return 1;
+		}
+		else if (n == 1)
+		{
+			return 1;
+		}
+		returnThis = 1;
+		for (int i = 1; i <= n; i++)
+		{
+			returnThis*=i;
+		}
+		return returnThis;
+	}
+}
+
+/*
     Multiplies each entry within a given vector by a given integer and saves
     the new values to a new vector to return
 
@@ -109,6 +152,7 @@ std::vector<int> SubtractN(std::vector<int> v, int n){
     }
     return v;
 }
+
 // returns -1 if the number is negative and 1 if positive
 // 0 returns positive because it takes up positive mem space- the abs of min int in c++ is one more than the max
 int Sign(int num){
@@ -138,7 +182,6 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 
 		}
 	}
-	//std::cout<<delim<<std::endl;
 	if (delim==100){
 		std::string error= "Error, could not find separator";
 		return_string.push_back(error);
@@ -149,7 +192,11 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return_string.push_back(whole.substr(delim, whole.size()));
 		return return_string;
 	}
-};
+
+
+
+}
+
 
 
 /* Function: VectorPlusN
@@ -188,5 +235,6 @@ int Sum(std::vector<int> nums){
         sum+=nums[i];
     }
     return sum;
+
 }
 
