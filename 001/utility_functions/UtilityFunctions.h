@@ -5,9 +5,15 @@
 
 // put the declarations of your utility functions here.
 // they should not be in a class.
+<<<<<<< HEAD
 
 #include <vector>
+=======
+>>>>>>> c52f368b7e50b51206528178327a87d2c1c29d72
 
+#include <vector> 
+
+std::vector<bool> EvenMask(std::vector<int>V);
 std::vector<int> VectorTimesN(std::vector<int> v, int n);
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
@@ -44,3 +50,4 @@ int Product(std::vector<int> nums);
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 int Sum(std::vector<int> input);
+
