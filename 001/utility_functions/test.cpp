@@ -1,7 +1,7 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 #include <iostream>
- 
+
 #include <vector>
 
 #include "UtilityFunctions.h"
@@ -13,7 +13,7 @@
 
 // Each SECTION should test one aspect of that function
 
-<<<<<<< HEAD
+
 TEST_CASE( "Testing the Sum function by checking that it returns the proper sum for a vector containing the numbers 1 through 10."){
   std::vector<double> nums;
 
@@ -21,10 +21,10 @@ TEST_CASE( "Testing the Sum function by checking that it returns the proper sum 
     nums.push_back(i);
   }
   REQUIRE(Sum(nums) == 55);
-  nums.clear()
+  nums.clear();
 }
-=======
->>>>>>> master
+
+
 
 TEST_CASE( "Testing that Entire Vector is Multiplied Correctly with VectorTimesN Function", "[VectorTimesN]" ) {
   std::vector<int> n;
@@ -82,7 +82,7 @@ TEST_CASE("Testing odd or even", "[EvenMask]"){
 		std::vector<bool> temp = {0,1,0,1,0,1,0,1,0};
 		REQUIRE(EvenMask(check1)== temp);
 	}
-	
+
 	SECTION ("Testing all odd"){
 		std::vector<int> check2 = {4,6,8,10};
 		std::vector<bool> temp = {1,1,1,1};
@@ -90,7 +90,7 @@ TEST_CASE("Testing odd or even", "[EvenMask]"){
 	}
 }
 
-TEST_CASE( "Check Factorial Function" ) 
+TEST_CASE( "Check Factorial Function" )
 {
     SECTION( "Check values from [0,4]" )
     {
@@ -100,7 +100,7 @@ TEST_CASE( "Check Factorial Function" )
         REQUIRE( Factorial(3) == 6 );
         REQUIRE( Factorial(4) == 24 );
     }
-    SECTION( "Check values from [-5,-3]" ) 
+    SECTION( "Check values from [-5,-3]" )
     {
         REQUIRE( Factorial(-5) == -1 );
         REQUIRE( Factorial(-4) == -1 );
@@ -133,17 +133,17 @@ TEST_CASE( "vectors can have elements removed based on another vector", "[vector
     std::vector<int> v1;
 	for (int i = 0; i < 5; i++) //create an int vector {0,1,2,3,4}
         v1.push_back(i);
-	
+
 	std::vector<int> v2;
 	v2.push_back(5);
 	v2.push_back(4); //create a second int vector {5,4}
-	
+
 	std::vector<int> v3;
 	v3.push_back(1);
 	v3.push_back(3); //create a third int vector {1,3}
-        
+
     REQUIRE( v1.size() == 5 );
-	REQUIRE( v2.size() == 2 );//some basic tests 
+	REQUIRE( v2.size() == 2 );//some basic tests
 	REQUIRE( v3.size() == 2 );
 	for (int i = 0; i < 5; i++)
 		REQUIRE( v1[i] == i);
