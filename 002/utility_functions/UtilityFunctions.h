@@ -1,9 +1,5 @@
-#ifndef UTILITYFUNCTIONS_H
-#define UTILITYFUNCTIONS_H
-
-#include <iostream>
 #include <vector>
-#include <string>
+#include <iostream>
 using namespace std;
 
 int Sign (int num);
