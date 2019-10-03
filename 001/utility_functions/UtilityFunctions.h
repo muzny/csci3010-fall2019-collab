@@ -1,19 +1,34 @@
+// put the declarations of your utility functions here.
+// they should not be in a class.
+
+
 
 // put the declarations of your utility functions here.
 // they should not be in a class.
+
+
+
+
+
+
 #include <vector>
-
-std::vector<int> VectorTimesN(std::vector<int> v, int n);
-std::vector<int> SubtractN(std::vector<int> v, int n);
-
 #include <string>
 #include <iostream>
+
 
 // Matthias Bruski
 // This function adds together all double type numbers in a vector and returns the result
 double Sum(std::vector<double> nums);
 
+/**
+    Returns the factorial of @param n
+*/
+int Factorial(int n);
 std::vector<int> SubtractN(std::vector<int> v, int n);
+
+std::vector<bool> EvenMask(std::vector<int>V);
+std::vector<int> VectorTimesN(std::vector<int> v, int n);
+
 
 int RemoveTwos(int original);
 
@@ -24,17 +39,16 @@ std::vector<std::string> Split(std::string whole, std::string separator);
 int Sign(int num);
 
 
-// Multiplies all numbers in a vector together and returns the resulting value
-int Product(std::vector<int> nums);
-
-
 //Sam Koulermos
 // takes two vectors of integers, a and b. The function then removes elements from a if they are also in b.
 // If the integer is in b, but not in a, nothing happens.
 std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 
+
+
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
+
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 int Sum(std::vector<int> input);
