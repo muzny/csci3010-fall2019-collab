@@ -1,2 +1,3 @@
-// put the declarations of your utility functions here.
-// they should not be in a class.
+#include <vector>
+
+std::string Join(std::vector<std::string> pieces, std::string glue);
