@@ -34,7 +34,7 @@ TEST_CASE("Test Addition", "[vector]")
       REQUIRE(Sum(nums3) == 210);
 
   }
-
+}
 
 TEST_CASE( "integer sign is reported back", "[int]" ) {
 
