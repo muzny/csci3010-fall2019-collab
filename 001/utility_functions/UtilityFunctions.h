@@ -1,6 +1,9 @@
 #include <vector>
 #include <string>
 #include <iostream>
+
+int RemoveTwos(int original);
+
 std::vector<std::string> Split(std::string whole, std::string separator);
 
 
