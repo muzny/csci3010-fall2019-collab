@@ -33,6 +33,9 @@ int main() {
     // make sure that the output is easily interpretable.
     // If you'd like to define helper functions in this file,
     // you are welcome to do so!
+    std::cout<<"RemoveTwos(16): "<<RemoveTwos(16)<<std::endl;
+    std::cout<<"RemoveTwos(26): "<<RemoveTwos(26)<<std::endl;
+    std::cout<<"RemoveTwos(52): "<<RemoveTwos(52)<<std::endl;
 
     std::cout<< "Reading in 6, expecting positive (1): "<< Sign(6) << std::endl;
     std::cout<< "Reading in 56, expecting positive (1); "<< Sign(56) << std::endl;
