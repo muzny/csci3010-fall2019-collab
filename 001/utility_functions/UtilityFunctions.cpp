@@ -65,6 +65,7 @@ std::vector<int> VectorTimesN(std::vector<int> v, int n) {
   return return_vec;
 }
 
+/*
   SubtractN - Subtracts the value of the parameter int n from every element in vector v
   @vector v - a vector that is being passed-in, @int n is the value to subtract from each element
   @returns a modified vector v 
