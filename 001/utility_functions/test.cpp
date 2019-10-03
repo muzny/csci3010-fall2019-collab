@@ -10,6 +10,19 @@
 
 // Each SECTION should test one aspect of that function
 
+TEST_CASE( "RemoveTwos returns the original int divided by 2 until it can no longer be divided", "[removetwos]" ) {
+
+    SECTION( "an odd input is immediately returned" ) {
+        REQUIRE( RemoveTwos(5) == 5 );
+        REQUIRE( RemoveTwos(7) == 7 );
+    }
+
+    SECTION( "even inputs are properly divided" ) {
+        REQUIRE( RemoveTwos(16) == 1 );
+        REQUIRE( RemoveTwos(6) == 3 );
+    }
+}
+
 TEST_CASE( "integer sign is reported back", "[int]" ) {
 
     SECTION( "testing positive values" ) {
@@ -102,3 +115,4 @@ TEST_CASE("Split string on separator", "[split]"){
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
 }
+
