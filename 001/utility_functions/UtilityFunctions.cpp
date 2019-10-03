@@ -1,7 +1,7 @@
 #include "UtilityFunctions.h"
-#include <iostream>
 #include <vector>
 #include "catch.hpp"
+#include <iostream>
 #include <string>
 // Implement your functions here. Don't forget function comments!
 
@@ -14,6 +14,28 @@ std::vector<double> SubtractN(std::vector<double> vec, double n){
 }
 
 
+/*
+This function says whether or not a vector of its is even or odd 
+
+@param: a vector if type ints 
+@returns: a vector of bools 
+
+*/
+std::vector<bool>  EvenMask(std::vector<int>V){
+	std::vector <bool> temp;
+for (int i=0; i<V.size(); i++){
+	if (V[i]%2==0){
+		temp.push_back(true);	
+	}
+	else {
+		temp.push_back(false);
+	}
+}
+return temp; 
+
+}
+
+
 // This function takes in an integer, and divides it by two as many times as possible
 // The resulting value is returned
 int RemoveTwos(int original){
@@ -22,6 +44,7 @@ int RemoveTwos(int original){
     }
     return original;
 }
+
 
 /**
     Returns the product the elements in a vector.
@@ -128,6 +151,7 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 	}
 };
 
+
 /* Function: VectorPlusN
    Parameters: A vector (v) to add a double (n) to each element
    Returns: A new vector updated with each of the numbers
@@ -165,3 +189,4 @@ int Sum(std::vector<int> nums){
     }
     return sum;
 }
+

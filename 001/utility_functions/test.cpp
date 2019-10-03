@@ -1,8 +1,12 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
+#include <iostream>
+ 
 #include <vector>
+
 #include "UtilityFunctions.h"
 #include <string>
+#include <vector>
 #include <iostream>
 // Your tests go here
 // Each TEST_CASE should test one function
@@ -66,56 +70,20 @@ TEST_CASE("VectorPlusN", "[vectorplusn]")
 {
   std::vector<double> v = {1, 2, 3};
 
-  SECTION("should add 3 to each value of the vector") {
-  	  std::vector<double> expected = {4, 5, 6};
-      REQUIRE(VectorPlusN(v, 3) == expected);
-   }
-
-   SECTION("should not change vector if 0 value is passed") {
-      REQUIRE(VectorPlusN(v, 0) == v);
-
-   }
-
-   SECTION("should subtract 4 from each value of the vector") {
-   	  std::vector<double> expected = {-3, -2, -1};
-      REQUIRE(VectorPlusN(v, -4) == expected);
-
-   }
+TEST_CASE("Testing odd or even", "[EvenMask]"){
+	SECTION ("Testing a combination"){
+		std::vector<int> check1 = {1,2,3,4,5,6,7,8,9};
+		std::vector<bool> temp = {0,1,0,1,0,1,0,1,0};
+		REQUIRE(EvenMask(check1)== temp);
+	}
+	
+	SECTION ("Testing all odd"){
+		std::vector<int> check2 = {4,6,8,10};
+		std::vector<bool> temp = {1,1,1,1};
+		REQUIRE(EvenMask(check2)==temp);
+	}
 }
-TEST_CASE( "For subTractN", "[vector]" ) {
-  //Jake Henson
-    std::vector<int> v = {5, 6, 7, 8, 9};
-    std::vector<int> output = {0,1,2,3,4};
-    int n = 5;
-
-    SECTION( "Make sure subtractN works properly" ) {
-        REQUIRE( SubtractN(v, n) == output );
-    }
-    SECTION( "Make sure subtractN works with negative numbers" ) {
-        int n = -2;
-        output = {7, 8, 9, 10, 11};
-        REQUIRE( SubtractN(v, n) == output);
-    }
-    SECTION( "Make sure subtractN works with an empty vector" ) {
-        int n = 3;
-        std::vector<int> v2 = {};
-        output = {};
-        REQUIRE( SubtractN(v2, n) == output);
-    }
-} //updated this
-
-TEST_CASE( "RemoveTwos returns the original int divided by 2 until it can no longer be divided", "[removetwos]" ) {
-
-    SECTION( "an odd input is immediately returned" ) {
-        REQUIRE( RemoveTwos(5) == 5 );
-        REQUIRE( RemoveTwos(7) == 7 );
-    }
-
-    SECTION( "even inputs are properly divided" ) {
-        REQUIRE( RemoveTwos(16) == 1 );
-        REQUIRE( RemoveTwos(6) == 3 );
-    }
-}
+	
 
 TEST_CASE( "integer sign is reported back", "[int]" ) {
 
@@ -140,17 +108,17 @@ TEST_CASE( "vectors can have elements removed based on another vector", "[vector
     std::vector<int> v1;
 	for (int i = 0; i < 5; i++) //create an int vector {0,1,2,3,4}
         v1.push_back(i);
-
+	
 	std::vector<int> v2;
 	v2.push_back(5);
 	v2.push_back(4); //create a second int vector {5,4}
-
+	
 	std::vector<int> v3;
 	v3.push_back(1);
 	v3.push_back(3); //create a third int vector {1,3}
-
+        
     REQUIRE( v1.size() == 5 );
-	REQUIRE( v2.size() == 2 );//some basic tests
+	REQUIRE( v2.size() == 2 );//some basic tests 
 	REQUIRE( v3.size() == 2 );
 	for (int i = 0; i < 5; i++)
 		REQUIRE( v1[i] == i);
@@ -208,29 +176,5 @@ TEST_CASE("Split string on separator", "[split]"){
 		std::vector<std::string> return_strings2 = Split(ex, splitter2);
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
-}
-std::vector<int> nums = {0,1,2,3,4,10};
-std::vector<int> nums2 = {2,3,4,10};
-std::vector<int> nums3 = {200,10};
 
-TEST_CASE("Test Addition", "[vector]")
-{
-  SECTION("Test with different numbers") {
-      REQUIRE(Sum(nums) == 20);
-      REQUIRE(Sum(nums2) == 19);
-      REQUIRE(Sum(nums3) == 210);
-
-  }
-
-  SECTION("Test add in a new number and then add") {
-      nums3.push_back(10);
-      REQUIRE(Sum(nums3) == 220);
-
-  }
-
-  SECTION("Test add a negative number and then add") {
-      nums3.push_back(-10);
-      REQUIRE(Sum(nums3) == 210);
-
-  }
 }
