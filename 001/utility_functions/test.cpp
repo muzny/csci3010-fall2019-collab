@@ -42,7 +42,7 @@ TEST_CASE( "Multiples are computed", "[multiple]" ) {
         REQUIRE( Multiples(12, -1) == corner );
 
     }
-
+}
 TEST_CASE("Testing odd or even", "[EvenMask]"){
 	SECTION ("Testing a combination"){
 		std::vector<int> check1 = {1,2,3,4,5,6,7,8,9};
