@@ -3,7 +3,6 @@
 #include <vector>
 #include "UtilityFunctions.h"
 #include <string>
-#include <vector>
 #include <iostream>
 // Your tests go here
 // Each TEST_CASE should test one function
@@ -19,6 +18,49 @@ TEST_CASE("Subtraction is completed", "[subtractn]"){
 	
 	SECTION("Returning a vector with negative doubles"){
 		REQUIRE ( SubtractN(std::vector<double>{5,6,7,8,9}, 9) == std::vector<double>{-4, -3, -2, -1, 0});
+TEST_CASE( "Testing that Entire Vector is Multiplied Correctly with VectorTimesN Function", "[VectorTimesN]" ) {
+  std::vector<int> n;
+  //Fill a large vector to check that every element is hit
+  for(int i = 0; i < 100; i++) {
+    n.push_back(i);
+  }
+  n = VectorTimesN(n, 0);
+  for(int i = 0; i < 100; i++) {
+    REQUIRE(n[i] == 0);
+  }
+  n.clear();
+
+  SECTION("Testing that Original Vector is Not Modified") {
+    for(int i = 0; i < 7; i++) {
+      n.push_back(i);
+    }
+    std::vector<int> m = VectorTimesN(n, 3);
+    for(int i = 0; i < 7; i++) {
+      REQUIRE(m[i] == i * 3);
+      REQUIRE(n[i] == i);
+    }
+    n.clear();
+    m.clear();
+  }
+
+  SECTION("Sending in an Empty Vector should Return an Empty Vector") {
+    std::vector<int> m;
+    m = VectorTimesN(m, 10);
+    REQUIRE(m.empty());
+  }
+
+  SECTION("Finally a Standard Multiplication Test") {
+    for(int i = 0; i < 10; i++) {
+      n.push_back(i);
+    }
+    std::vector<int> m = VectorTimesN(n, 10);
+    for(int i = 0; i < 10; i++) {
+      REQUIRE(m[i] == n[i] * 10);
+    }
+    n.clear();
+    m.clear();
+  }
+}
 
 TEST_CASE("VectorPlusN", "[vectorplusn]")
 {
@@ -26,7 +68,7 @@ TEST_CASE("VectorPlusN", "[vectorplusn]")
 
   SECTION("should add 3 to each value of the vector") {
   	  std::vector<double> expected = {4, 5, 6};
-      REQUIRE(VectorPlusN(v, 3) == expected); 
+      REQUIRE(VectorPlusN(v, 3) == expected);
    }
 
    SECTION("should not change vector if 0 value is passed") {
@@ -41,7 +83,7 @@ TEST_CASE("VectorPlusN", "[vectorplusn]")
    }
 }
 TEST_CASE( "For subTractN", "[vector]" ) {
-  //Jake Henson 
+  //Jake Henson
     std::vector<int> v = {5, 6, 7, 8, 9};
     std::vector<int> output = {0,1,2,3,4};
     int n = 5;
@@ -60,7 +102,7 @@ TEST_CASE( "For subTractN", "[vector]" ) {
         output = {};
         REQUIRE( SubtractN(v2, n) == output);
     }
-} //updated this 	
+} //updated this
 
 TEST_CASE( "RemoveTwos returns the original int divided by 2 until it can no longer be divided", "[removetwos]" ) {
 
@@ -98,17 +140,17 @@ TEST_CASE( "vectors can have elements removed based on another vector", "[vector
     std::vector<int> v1;
 	for (int i = 0; i < 5; i++) //create an int vector {0,1,2,3,4}
         v1.push_back(i);
-	
+
 	std::vector<int> v2;
 	v2.push_back(5);
 	v2.push_back(4); //create a second int vector {5,4}
-	
+
 	std::vector<int> v3;
 	v3.push_back(1);
 	v3.push_back(3); //create a third int vector {1,3}
-        
+
     REQUIRE( v1.size() == 5 );
-	REQUIRE( v2.size() == 2 );//some basic tests 
+	REQUIRE( v2.size() == 2 );//some basic tests
 	REQUIRE( v3.size() == 2 );
 	for (int i = 0; i < 5; i++)
 		REQUIRE( v1[i] == i);
@@ -166,4 +208,29 @@ TEST_CASE("Split string on separator", "[split]"){
 		std::vector<std::string> return_strings2 = Split(ex, splitter2);
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
+}
+std::vector<int> nums = {0,1,2,3,4,10};
+std::vector<int> nums2 = {2,3,4,10};
+std::vector<int> nums3 = {200,10};
+
+TEST_CASE("Test Addition", "[vector]")
+{
+  SECTION("Test with different numbers") {
+      REQUIRE(Sum(nums) == 20);
+      REQUIRE(Sum(nums2) == 19);
+      REQUIRE(Sum(nums3) == 210);
+
+  }
+
+  SECTION("Test add in a new number and then add") {
+      nums3.push_back(10);
+      REQUIRE(Sum(nums3) == 220);
+
+  }
+
+  SECTION("Test add a negative number and then add") {
+      nums3.push_back(-10);
+      REQUIRE(Sum(nums3) == 210);
+
+  }
 }

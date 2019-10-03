@@ -1,4 +1,7 @@
 #include "UtilityFunctions.h"
+
+
+
 #include <iostream>
 #include <vector>
 #include "catch.hpp"
@@ -14,7 +17,7 @@
 */
 std::string VectorAsEquation(std::vector<int> v) {
 	std::string print_message;
-	
+
 	if (v.size() == 0) {
 		return	print_message + "empty vector = ";
 	}
@@ -28,7 +31,32 @@ std::string VectorAsEquation(std::vector<int> v) {
 }
 
 
+
+/**
+Oceane Andreis & Mikayla Pickett
+This is our main file. We declared a few vectors of different size to see how our function would work.
+We made sure to also try it by adding a number to our vector and then getting the sum of the vector with that new number.
+
+*/
+
+using namespace std;
+
 int main() {
+
+    vector<int> nums = {0,1,2,3,4,10};
+    vector<int> nums2 = {2,3,4,10};
+    vector<int> nums3 = {200,10};
+
+    nums3.push_back(10);
+    nums2.push_back(-10);
+
+    cout<<"Print the sum of our vectors: "<<endl;
+    cout<<"1st Vector: ";
+    cout<<Sum(nums)<<endl;
+    cout<<"2nd Vector: ";
+    cout<<Sum(nums2)<<endl;
+    cout<<"3rd Vector: ";
+    cout<<Sum(nums3)<<endl;
 
     // the main function should have demonstrations
     // of running your functions.
@@ -48,6 +76,26 @@ int main() {
 		std::cout << sub_vec[i] << " ";
 	}
 	std::cout << std::endl;
+    std::vector<int> a = {1, 2, 3, 4, 5, 6};
+    std::cout << "Demonstration of VectorTimesN Function:\n Vector before multiplication:\n [";
+    for(int i = 0; i < a.size(); i++) {
+      std::cout << a[i];
+      if(i != a.size() - 1) {
+        std::cout << ", ";
+      }
+    }
+    std::cout << "]\n";
+    std::vector<int> b = VectorTimesN(a, 3);
+    std::cout << "New vector after multiplication by 3:\n [";
+    for(int i = 0; i < b.size(); i++) {
+      std::cout << b[i];
+      if(i != b.size() - 1) {
+        std::cout << ", ";
+      }
+    }
+    std::cout << "]\n";
+    a.clear();
+    b.clear();
 
     std::vector<double> plus_n_example = {4, 5, 6};
     std::vector<double> new_vector = VectorPlusN(plus_n_example, 4);
@@ -86,7 +134,7 @@ int main() {
     for (int i = 0; i<result.size(); i++){
     	std::cout<<result[i]<<std::endl;
     }
-    
+
     std::string separator2 = "Fr";
     std::vector<std::string> result2 = Split(whole, separator2);//case where delimiter is in string
 
@@ -94,4 +142,5 @@ int main() {
     	std::cout<<result2[i]<<std::endl;
     }
 
+  return 0;
 }
