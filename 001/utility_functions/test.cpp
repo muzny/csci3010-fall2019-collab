@@ -9,6 +9,26 @@
 // Each TEST_CASE should test one function
 
 // Each SECTION should test one aspect of that function
+TEST_CASE("VectorPlusN", "[vectorplusn]")
+{
+  std::vector<double> v = {1, 2, 3};
+
+  SECTION("should add 3 to each value of the vector") {
+  	  std::vector<double> expected = {4, 5, 6};
+      REQUIRE(VectorPlusN(v, 3) == expected); 
+   }
+
+   SECTION("should not change vector if 0 value is passed") {
+      REQUIRE(VectorPlusN(v, 0) == v);
+
+   }
+
+   SECTION("should subtract 4 from each value of the vector") {
+   	  std::vector<double> expected = {-3, -2, -1};
+      REQUIRE(VectorPlusN(v, -4) == expected);
+
+   }
+}
 TEST_CASE( "For subTractN", "[vector]" ) {
   //Jake Henson 
     std::vector<int> v = {5, 6, 7, 8, 9};
@@ -136,4 +156,3 @@ TEST_CASE("Split string on separator", "[split]"){
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
 }
-
