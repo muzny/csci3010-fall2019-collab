@@ -9,7 +9,6 @@
 // Each TEST_CASE should test one function
 
 // Each SECTION should test one aspect of that function
-<<<<<<< HEAD
 TEST_CASE( "Check Factorial Function" ) 
 {
     SECTION( "Check values from [0,4]" )
@@ -27,7 +26,6 @@ TEST_CASE( "Check Factorial Function" )
         REQUIRE( Factorial(-3) == -1 );
     }
 }
-=======
 
 TEST_CASE( "integer sign is reported back", "[int]" ) {
 
@@ -121,4 +119,4 @@ TEST_CASE("Split string on separator", "[split]"){
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
 }
->>>>>>> master
+

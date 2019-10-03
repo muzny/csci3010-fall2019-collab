@@ -1,21 +1,15 @@
-<<<<<<< HEAD
 // put the declarations of your utility functions here.
 // they should not be in a class.
 
-int Factorial(int n);
-=======
 #include <vector>
 #include <string>
 #include <iostream>
 std::vector<std::string> Split(std::string whole, std::string separator);
 
+int Factorial(int n);
 
 // returns -1 if the number is negative and 1 if positive or zero
 int Sign(int num);
-
-
-// Multiplies all numbers in a vector together and returns the resulting value
-int Product(std::vector<int> nums);
 
 
 //Sam Koulermos
@@ -25,4 +19,4 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
->>>>>>> 66178334820a9bd48fcd8950bdf7742ab7892aca
+
