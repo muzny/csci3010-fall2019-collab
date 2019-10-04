@@ -10,14 +10,15 @@ int main() {
     // you are welcome to do so!
 
 	std::vector<int> num;
-	num.push_back(1);
-	num.push_back(2);
-	num.push_back(3);
-	num.push_back(4);
+	for (int i = 1; i < 5; i++ ){
+		num.push_back(i);
+	}
+	
 	
 	std::vector<bool> bool_result;
 	bool_result = OddMask(num);
 
+	// used boolalpha to print the bollen value as true or false and not as 0 or 1
 	std::cout << std::boolalpha;
 
 	for(bool x : bool_result){

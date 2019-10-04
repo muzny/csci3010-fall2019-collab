@@ -8,7 +8,7 @@
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
 
-TEST_CASE("Boolen vector is returned","[vector]"){
+TEST_CASE("Boolen vector is returned ","[vector]"){
 	std::vector<bool> trueVect{ true };
 	REQUIRE( OddMask({1}) == trueVect );
 	
