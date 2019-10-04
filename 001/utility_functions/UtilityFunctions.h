@@ -1,11 +1,38 @@
-// put the declarations of your utility functions here.
-// they should not be in a class.
-#include <vector>
-std::vector<int> SubtractN(std::vector<int> v, int n);
-
+#include <iostream>
 #include <vector>
 #include <string>
-#include <iostream>
+
+// put the declarations of your utility functions here.
+// they should not be in a class.
+
+
+#include <vector>
+std::vector<int> Multiples(int n, int m);
+
+// put the declarations of your utility functions here.
+// they should not be in a class.
+//
+//
+std::vector<double> SubtractN(std::vector<double> vec, double n);
+
+#endif //end _NAME_H_ header guard
+
+// put the declarations of your utility functions here.
+// they should not be in a class.
+
+std::vector<int> SubtractN(std::vector<int> v, int n);
+
+/**
+    Returns the factorial of @param n
+
+
+*/
+int Factorial(int n);
+std::vector<int> SubtractN(std::vector<int> v, int n);
+
+std::vector<bool> EvenMask(std::vector<int>V);
+std::vector<int> VectorTimesN(std::vector<int> v, int n);
+std::vector<int> SubtractN(std::vector<int> v, int n);
 
 int RemoveTwos(int original);
 
@@ -16,17 +43,18 @@ std::vector<std::string> Split(std::string whole, std::string separator);
 int Sign(int num);
 
 
-// Multiplies all numbers in a vector together and returns the resulting value
-int Product(std::vector<int> nums);
-
-
 //Sam Koulermos
 // takes two vectors of integers, a and b. The function then removes elements from a if they are also in b.
 // If the integer is in b, but not in a, nothing happens.
 std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
+
+
 
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
 
 // Joins together a vector of strings using a string glue 
 std::string Join(std::vector<std::string> pieces, std::string glue);
+
+std::vector<double> VectorPlusN(std::vector<double> v, double n);
+int Sum(std::vector<int> input);

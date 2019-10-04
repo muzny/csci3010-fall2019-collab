@@ -1,31 +1,26 @@
+
 #include "UtilityFunctions.h"
-#include "catch.hpp"
-#include <string>
 #include <iostream>
 #include <vector>
-using namespace std;
-//https://www.techiedelight.com/print-vector-cpp/
-void print(std::vector<bool> const &input)
-{
-    std::cout <<"A 1 means odd number, a 0 means an even number."<< std::endl;
-	for (int i = 0; i < input.size(); i++) {
-		std::cout << input.at(i) << ' ';
-	}
-    std::cout << std::endl;
-}
 
-int main() {
-    std::vector<int>vect{ 10, 3, 4, 5, 7, 20, 30 };
-    print(OddMask(vect));
+using namespace std;
+
+int main()
+{
     vector<int> test_vector = {1, 2, 3, 4};
     vector<bool> output_vector;
-	
     output_vector = GreaterMask(test_vector, 3);
-    for(int i=0; i < output_vector.size(); i++){
+    for (int i = 0; i < output_vector.size(); i++)
+    {
         cout << output_vector[i] << endl;
     }
-    
-    string str = "Hi this is Colin. Colin says Hi";
-    cout << RemoveFirstSubstring(str, "Colin") << endl;
-}
+    vector<double> test_vector_D = {1.0, 2.0, 3.0, 4.0};
+    double Product_total;
+    Product_total = Product(test_vector_D);
+    cout << "The result of 1.0, 2.0, 3.0, 4.0 multiplied is : " << Product_total << endl;
 
+    std::vector<string> my_fav = {"I", "Like", "PB&J"};
+    string glue = " ";
+    cout << Join(my_fav, glue) << endl;
+    //Prints string "I Like PB&J"
+}
