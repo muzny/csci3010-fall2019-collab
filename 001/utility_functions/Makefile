@@ -3,9 +3,10 @@ CXX = g++  # the compiler
 CXXFLAGS = -std=c++11 -Wall  # flags for the compiler (use c++11 standards, turn on all optional warnings)
 GDBINFO = -ggdb # include this to generate info needed to run gdb
 
+run: all
+	./test
+
 all: main test
-
-
 
 clean:
 	rm UtilityFunctions.o main test
