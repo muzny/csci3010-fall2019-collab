@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/muzny/csci3010-fall2019-collab.svg?branch=master)](https://travis-ci.org/muzny/csci3010-fall2019-collab)
+
 CSCI 3010 collaboration repository
 ==================
 [link to main course repository](https://github.com/muzny/csci3010-cuboulder)
