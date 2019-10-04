@@ -12,7 +12,7 @@ using namespace std;
 TEST_CASE() {
     REQUIRE( Sign(4.5) == 1 );
     REQUIRE( Sign(-2.764) == -1 );
-
+}
 /*
 This test cases tests the Factorial function in UtilityFunctions.cpp.
 The two sections are 5! and 4!. 
