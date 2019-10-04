@@ -1,9 +1,10 @@
+
 #include "UtilityFunctions.h"
-#include "catch.hpp"
-#include <string>
 #include <iostream>
 #include <vector>
+
 using namespace std;
+
 
 int main() {
     vector<int> test_vector = {1, 2, 3, 4};
@@ -23,5 +24,11 @@ int main() {
 
     string str = "Hi this is Colin. Colin says Hi";
     cout << RemoveFirstSubstring(str, "Colin") << endl;
-}
 
+
+    int a=2;
+    int Sign(a);
+   // int Sign (-3);
+
+
+}

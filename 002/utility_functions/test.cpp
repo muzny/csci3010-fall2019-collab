@@ -1,9 +1,11 @@
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
+
 #include "UtilityFunctions.h"
 
 
 using namespace std;
+
 
 vector<int> test_vector = {1, 2, 3, 4};
 int greater_than = 3;
@@ -18,9 +20,17 @@ TEST_CASE ( "Vector is working.") {
     REQUIRE( GreaterMask(test_vector, greater_than) ==  correct_vector);
     REQUIRE( GreaterMask(test_vector2, greater_than2) == correct_vector2 );
 }
+
 // Your tests go here
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
+/*
+This test cases tests the Factorial function in UtilityFunctions.cpp.
+The two sections are 5! and 4!. 
+*/
+TEST_CASE("Factorial"){
+	SECTION("Factorial of 5."){
+		int n = 5;
 
 TEST_CASE("testing the SubtractN function", "[classic]")
 {
@@ -59,8 +69,19 @@ TEST_CASE( "Removes the first instance of a substring from a string", "RemoveFir
         string res = " a good neighbor, State Farm is there.";
         REQUIRE(RemoveFirstSubstring(s1,s4) == res);
     }
-    SECTION( "End" ) {
-        string res = "Like a good neighbor, State Farm is there";
-        REQUIRE(RemoveFirstSubstring(s1,s5) == res);
+}
+
+//Test for sign function
+TEST_CASE("return 1 if positive and -1 if negative","[Sign]") {
+    REQUIRE(Sign(0)==0);
+    SECTION("Test with positive values") {
+        REQUIRE(Sign(2)==1);
+        REQUIRE(Sign(5)==1);
+        REQUIRE(Sign(1)==1);
+    }
+    SECTION("Test with negative values ") {
+        REQUIRE(Sign(-3)==-1);
+        REQUIRE(Sign(-20)==-1);
+        REQUIRE(Sign(-1)==-1);
     }
 }

@@ -1,17 +1,13 @@
-#ifndef UTILITYFUNCTIONS_H
-#define UTILITYFUNCTIONS_H
-
-#include <iostream>
-#include <vector>
-#include <string>
-using namespace std;
-
 // put the declarations of your utility functions here.
 // they should not be in a class.
+//Returns the factorial of n. 
+int Factorial(int n);
+#include <vector>
+#include <iostream>
+using namespace std;
 
-string RemoveFirstSubstring(string s1, string s2);
+int Sign (int num);
 
-vector<bool> GreaterMask(vector<int> nums, int greater_than);
 
 // subtracts n to each element of the vector
 vector<double> SubtractN(vector<double> input, double n);

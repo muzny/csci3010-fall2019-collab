@@ -1,27 +1,39 @@
+//Alden Maben
 #include "UtilityFunctions.h"
-#include <vector>
 #include <string>
 #include <iostream>
 using namespace std;
 
-// Implement your functions here. Don't forget function comments!
-
-vector<bool> GreaterMask(vector<int> nums, int greater_than){
-    // creating a new vector to return true or false
-    vector<bool> true_or_false;
-    // iterating through the vector of ints
-    for(int i=0; i < nums.size(); i++){
-        // if the number in the vector is greater than the given int, add true to the bool vector
-        if(nums[i] > greater_than){
-            true_or_false.push_back(true);
-        }
-        // if it is less than or equal to add false
-        else{
-            true_or_false.push_back(false);
-        }
+//  This function will take any integer and will return 1 if the value is positive, -1 if the value is negative, and 0 if the value is 0
+int Sign (int num){
+    if (num > 0)
+    {
+        return 1;
     }
-    // returning bool vector
-    return true_or_false;
+    else if (num < 0)
+    {
+        return -1;
+    }
+    else{
+        return 0;
+    }
+}
+
+
+
+// Implement your functions here. Don't forget function comments!
+/*
+Returns the factorial of n. 
+
+@param n; The number in which we are factorializing.
+*/
+int Factorial(int n){
+	if(n > 1){
+		return n * Factorial(n - 1);
+	}
+	else{
+		return 1;
+	}
 }
 
 // Function that returns a vector with number n subtracted from each value in the vector
