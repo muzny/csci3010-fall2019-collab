@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 
+// Function to multiply every element in a vector
 int UtilityFunctions::Product(vector<int> nums)
 {
   int product = 1;
