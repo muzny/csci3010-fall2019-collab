@@ -1,5 +1,10 @@
 #include "UtilityFunctions.h"
+
+#include <vector>
+
 #include <iostream>
+
+
 using namespace std;
 
 
@@ -21,5 +26,21 @@ int main()
     int Sign(a);
    // int Sign (-3);
 
+
+    //Kevin Ruby -- A program to multiple all elements in vector by n.
+
+	vector<int> input{3,4,5};
+    vector<int> output = VectorTimesN(input,5);
+
+    for (int i=0;i<output.size();i++){
+    	cout << output[i] <<"  ";
+    }
+    cout<<endl;
+    return 0;
+
+    std::vector<string> my_fav = {"I", "Like", "PB&J"};
+    string glue = " ";
+    cout << Join(my_fav, glue) << endl;
+    //Prints string "I Like PB&J"
 
 }
