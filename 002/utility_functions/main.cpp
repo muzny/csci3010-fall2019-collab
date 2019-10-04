@@ -14,6 +14,7 @@ int main() {
 vector<double> test_vector_D = {1.0,2.0,3.0,4.0};
     double Product_total;
     Product_total = Product(test_vector_D);
-    cout << Product_total << endl;
+    cout << "The result of 1.0, 2.0, 3.0, 4.0 multiplied is : " << Product_total << endl;
+    
 
 }

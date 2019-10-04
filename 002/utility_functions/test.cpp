@@ -33,23 +33,24 @@ TEST_CASE("Product is working")
     vector<double> t_5 = {5.0};
     double a_5 = 5.0;
 
-    SECTION("All Positive Numbers")
+    SECTION("All Positive Numbers") // testing a regular vector
     {
         REQUIRE(Product(t_1) == a_1);
     }
-    SECTION("Odd Negatives")
+    SECTION("Odd Negatives") // testing to make sure that when multiplying an odd amount of negative numbers it returns a negative product
+                             
     {
         REQUIRE(Product(t_2) == a_2);
     }
-    SECTION("Even Negatives")
+    SECTION("Even Negatives")// testing to make sure that when multiplying an even amount of negative numbers it returns a postive product
     {
         REQUIRE(Product(t_3) == a_3);
     }
-    SECTION("Anything times zero")
+    SECTION("Anything times zero")// testing to make sure that when mult by 0 result is 0
     {
         REQUIRE(Product(t_4) == a_4);
     }
-    SECTION("One number")
+    SECTION("One number")// checking to see if the vector works on one element.
     {
         REQUIRE(Product(t_5) == a_5);
     }
