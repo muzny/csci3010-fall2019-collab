@@ -1,8 +1,9 @@
 #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
-
+#include <iostream>
 #include <vector>
 #include "UtilityFunctions.h"
+using namespace std;
 
 TEST_CASE ("Testing Product Function", "[product]"){
   UtilityFunctions u1;
@@ -26,11 +27,6 @@ TEST_CASE ("Testing Product Function", "[product]"){
 // Your tests go here
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
-
-#include <iostream>
-#include <vector>
-
-using namespace std;
 
 TEST_CASE( "combines vector to string with glue in between", "[vector]" ) {
   std::vector<string> a{"wow"};
