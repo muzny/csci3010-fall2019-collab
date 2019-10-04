@@ -45,6 +45,12 @@ TEST_CASE( "combines vector to string with glue in between", "[vector]" ) {
 // Your tests go here
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
+TEST_CASE("addN(Double)is working."){
+    vector<double> test_vector3 = {1.0, 2.0, 3.0, 4.0};
+    vector<double> correct_vector3={2.0, 3.0, 4.0, 5.0};
+    REQUIRE(AddN(test_vector3,1.0)==correct_vector3);
+}
+
 /*
 This test cases tests the Factorial function in UtilityFunctions.cpp.
 The two sections are 5! and 4!. 
