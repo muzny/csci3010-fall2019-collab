@@ -69,7 +69,7 @@ TEST_CASE("Product is working")
         REQUIRE(Product(t_5) == a_5);
     }
 // tests the sign function with two sections (checks both positive and negative cases)
-TEST_CASE() {
+TEST_CASE("Sign negative and positive") {
     REQUIRE( Sign(4.5) == 1 );
     REQUIRE( Sign(-2.764) == -1 );
 }
@@ -125,7 +125,6 @@ TEST_CASE("return 1 if positive and -1 if negative","[Sign]") {
         REQUIRE(Sign(2)==1);
         REQUIRE(Sign(5)==1);
         REQUIRE(Sign(1)==1);
-
     }
     SECTION("Test with negative values ") {
         REQUIRE(Sign(-3)==-1);
