@@ -53,6 +53,6 @@ string RemoveFirstSubstring(string s1, string s2)
 {
     int first_index = s1.find(s2); //First index of the instace of the sub string
     if(first_index < 0){ // if there isn't an instance do nothing
-        return s1;
+        return s1;}
     return s1.substr(0,first_index) + s1.substr(first_index+s2.size(),-1); // return the substring before and after the instance
 }
