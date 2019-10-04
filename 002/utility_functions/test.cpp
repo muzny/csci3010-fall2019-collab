@@ -22,7 +22,6 @@ TEST_CASE ( "Vector is working.") {
 
 }
 
-// Your tests go here
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
 /*
