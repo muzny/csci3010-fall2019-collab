@@ -39,6 +39,13 @@ int Sign (int num){
 }
 
 // Implement your functions here. Don't forget function comments!
+vector<double> AddN(vector<double> v, double n){
+    for (int i = 0; i < v.size(); ++i) {   //for each element in vector v
+        v[i] += n;   //add n to it.
+    }
+    return v; //then return.
+}
+
 //Recursively calls the fibonachi function if the number isnt 0 or 1. 
 int fibonacci(int n){
     if (n <= 1) 
@@ -60,4 +67,5 @@ int Factorial(int n){
 	else{
 		return 1;
 	}
+
 }

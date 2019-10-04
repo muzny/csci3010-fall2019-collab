@@ -8,6 +8,7 @@ using namespace std;
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
 
+
 TEST_CASE( "Doubles are summed", "[summation]" ) {
     std::vector<double> v{2.4, 5.0, 6.9, 13.4, 15.9};
 
@@ -21,6 +22,12 @@ TEST_CASE( "Doubles are summed", "[summation]" ) {
         REQUIRE( v.size() == 0 );
         REQUIRE( Sum(v) == 0.0 );
     }
+
+TEST_CASE("addN(Double)is working."){
+    vector<double> test_vector3 = {1.0, 2.0, 3.0, 4.0};
+    vector<double> correct_vector3={2.0, 3.0, 4.0, 5.0};
+    REQUIRE(AddN(test_vector3,1.0)==correct_vector3);
+
 }
 
 /*
