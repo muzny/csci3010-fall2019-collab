@@ -10,5 +10,8 @@ int Factorial(int n);
 #include <vector>
 #include <iostream>
 
+//Returns the factorial of n. 
+int Factorial(int n);
 int Sign (int num);
+int fibonacci(int n);
 
