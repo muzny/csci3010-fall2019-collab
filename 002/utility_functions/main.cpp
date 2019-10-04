@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 int main()
 {
     // the main function should have demonstrations
@@ -9,6 +10,7 @@ int main()
     // make sure that the output is easily interpretable.
     // If you'd like to define helper functions in this file,
     // you are welcome to do so!
+    std::cout << fibonacci(15) << '\n';
 
   
     // these two cout statements show the sign function is working. prints 1 for positive numbers, and -1 for negative numbers.

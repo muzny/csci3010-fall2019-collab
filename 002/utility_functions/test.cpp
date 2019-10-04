@@ -30,6 +30,13 @@ TEST_CASE("Factorial"){
 	}
 }
 
+//Test for fibonacci
+TEST_CASE ( "Fibonacci", "[Fibonacci]") {
+  REQUIRE( fibonacci(15) == 610 );
+  REQUIRE( fibonacci(0) == 0 );
+  REQUIRE( fibonacci(1) == 1 );
+
+}
 //Test for sign function
 TEST_CASE("return 1 if positive and -1 if negative","[Sign]") {
     REQUIRE(Sign(0)==0);
