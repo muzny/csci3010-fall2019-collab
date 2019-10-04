@@ -30,6 +30,8 @@ TEST_CASE("Subtraction is completed", "[subtractn]"){
 	
 	SECTION("Returning a vector with negative doubles"){
 		REQUIRE ( SubtractN(std::vector<double>{5,6,7,8,9}, 9) == std::vector<double>{-4, -3, -2, -1, 0});
+  }
+}
 
 
 
