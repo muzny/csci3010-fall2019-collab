@@ -25,6 +25,7 @@ TEST_CASE("Factorial"){
 }
 
 
+
 TEST_CASE("testing multiplying vector elements by a constant n","[vector]"){
 	vector<int> v1{1,2,3,4};
 	SECTION("vector <1,2,3,4> "){
@@ -66,7 +67,14 @@ TEST_CASE("Product is working")
     SECTION("Even Negatives")// testing to make sure that when multiplying an even amount of negative numbers it returns a postive product
     {
         REQUIRE(Product(t_3) == a_3);
-=======
+
+//Test for fibonacci
+TEST_CASE ( "Fibonacci", "[Fibonacci]") {
+  REQUIRE( fibonacci(15) == 610 );
+  REQUIRE( fibonacci(0) == 0 );
+  REQUIRE( fibonacci(1) == 1 );
+
+}
 //Test for sign function
 TEST_CASE("return 1 if positive and -1 if negative","[Sign]") {
     REQUIRE(Sign(0)==0);
