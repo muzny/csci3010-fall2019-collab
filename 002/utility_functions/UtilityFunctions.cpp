@@ -1,13 +1,10 @@
-#include <iostream>
-#include <vector>
+//Alden Maben
 #include "UtilityFunctions.h"
-#include <vector>
 #include <string>
 #include <iostream>
 using namespace std;
 
 
-#include <iostream>
 #include <cstdlib>
 
 // Function to multiply every element in a vector
@@ -31,4 +28,36 @@ string Join(vector<string> pieces, string glue) {
       s = s + pieces[i];
   };
   return s;
+
+//  This function will take any integer and will return 1 if the value is positive, -1 if the value is negative, and 0 if the value is 0
+int Sign (int num){
+    if (num > 0)
+    {
+        return 1;
+    }
+    else if (num < 0)
+    {
+        return -1;
+    }
+    else{
+        return 0;
+    }
 }
+
+
+
+// Implement your functions here. Don't forget function comments!
+/*
+Returns the factorial of n. 
+
+@param n; The number in which we are factorializing.
+*/
+int Factorial(int n){
+	if(n > 1){
+		return n * Factorial(n - 1);
+	}
+	else{
+		return 1;
+	}
+}
+

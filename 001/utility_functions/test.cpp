@@ -1,16 +1,7 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
-#include <iostream>
- 
-#include <vector>
-
 #include "UtilityFunctions.h"
-
-
-#include <vector>
 #include <limits>
-
-
 #include <string>
 #include <vector>
 #include <iostream>
@@ -20,6 +11,17 @@
 
 // Each SECTION should test one aspect of that function
 
+TEST_CASE("Boolen vector is returned ","[vector]"){
+	std::vector<bool> trueVect{ true };
+	REQUIRE( OddMask({1}) == trueVect );
+	
+	std::vector<bool> falseVect{ false };
+	REQUIRE( OddMask({2}) == falseVect );
+	
+	std::vector<bool> testVect{ true, false, false };
+	REQUIRE( OddMask({15, 0, 222}) == testVect );
+  }
+
 TEST_CASE("Subtraction is completed", "[subtractn]"){
 	
 	SECTION("Returning a vector of positive doubles"){
@@ -28,6 +30,8 @@ TEST_CASE("Subtraction is completed", "[subtractn]"){
 	
 	SECTION("Returning a vector with negative doubles"){
 		REQUIRE ( SubtractN(std::vector<double>{5,6,7,8,9}, 9) == std::vector<double>{-4, -3, -2, -1, 0});
+  }
+}
 
 
 
@@ -228,5 +232,4 @@ TEST_CASE("Split string on separator", "[split]"){
 		std::vector<std::string> return_strings2 = Split(ex, splitter2);
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
-
 }
