@@ -40,7 +40,6 @@ We made sure to also try it by adding a number to our vector and then getting th
 
 */
 
-
 int main() {
     // Test vector joing function
     std::cout << Join({"Cats", "Dogs", "Fish"}, ",") << std::endl;
@@ -65,6 +64,24 @@ int main() {
     // make sure that the output is easily interpretable.
     // If you'd like to define helper functions in this file,
     // you are welcome to do so!
+  
+	std::vector<int> num;
+	for (int i = 1; i < 5; i++ ){
+		num.push_back(i);
+	}
+	
+	
+	std::vector<bool> bool_result;
+	bool_result = OddMask(num);
+
+	// used boolalpha to print the bollen value as true or false and not as 0 or 1
+	std::cout << std::boolalpha;
+
+	for(bool x : bool_result){
+		std::cout << x << ", " ;
+	}
+
+	std::cout << std::endl;
 	
 	std::vector<double> vec = {1,2,3,4,5};
 	std::vector<double> sub_vec = SubtractN(vec,1);

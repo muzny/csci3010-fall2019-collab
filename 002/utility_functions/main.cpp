@@ -1,26 +1,23 @@
-
 #include "UtilityFunctions.h"
 #include <iostream>
 #include <vector>
 
-using namespace std;
 
-int main()
-{
-    vector<int> test_vector = {1, 2, 3, 4};
-    vector<bool> output_vector;
-    output_vector = GreaterMask(test_vector, 3);
-    for (int i = 0; i < output_vector.size(); i++)
-    {
-        cout << output_vector[i] << endl;
-    }
-    vector<double> test_vector_D = {1.0, 2.0, 3.0, 4.0};
-    double Product_total;
-    Product_total = Product(test_vector_D);
-    cout << "The result of 1.0, 2.0, 3.0, 4.0 multiplied is : " << Product_total << endl;
+int main() {
+    // the main function should have demonstrations
+    // of running your functions.
+    // make sure that the output is easily interpretable.
+    // If you'd like to define helper functions in this file,
+    // you are welcome to do so!
 
-    std::vector<string> my_fav = {"I", "Like", "PB&J"};
-    string glue = " ";
-    cout << Join(my_fav, glue) << endl;
-    //Prints string "I Like PB&J"
+    std::vector<double> v1{18.1, 1.3, 0.7};
+    std::vector<double> v2{0.1, 0.4, 0.9, 0.5};
+    std::vector<double> v3{17.8, 31.4, 56.7, 87.6, 90.1};
+
+    std::cout << "The sum of v1 is " << Sum(v1) << std::endl;
+    std::cout << "The sum of v2 is " << Sum(v2) << std::endl;
+    std::cout << "The sum of v3 is " << Sum(v3) << std::endl;
+
+    return 1;
 }
+

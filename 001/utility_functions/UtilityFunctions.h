@@ -4,20 +4,14 @@
 
 // put the declarations of your utility functions here.
 // they should not be in a class.
-
-
-#include <vector>
 std::vector<int> Multiples(int n, int m);
 
 // put the declarations of your utility functions here.
 // they should not be in a class.
-//
-//
 std::vector<double> SubtractN(std::vector<double> vec, double n);
 
 // put the declarations of your utility functions here.
 // they should not be in a class.
-
 std::vector<int> SubtractN(std::vector<int> v, int n);
 
 /**
@@ -55,4 +49,8 @@ int Product(std::vector<int> nums);
 std::string Join(std::vector<std::string> pieces, std::string glue);
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
+
 int Sum(std::vector<int> input);
+
+// returns a vector with true for odd numbers and false for even numbers
+std::vector<bool> OddMask(std::vector<int> numbers);
