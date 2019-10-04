@@ -125,3 +125,13 @@ int Factorial(int n){
 		return 1;
 	}
 }
+
+double Product(vector<double> nums)
+{
+  double product = 1;
+  for(int i = 0; i < nums.size(); i++)
+  {
+    product = product * nums[i];
+  }
+  return product;
+}
