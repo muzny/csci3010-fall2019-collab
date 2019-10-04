@@ -5,8 +5,6 @@ GDBINFO = -ggdb # include this to generate info needed to run gdb
 
 all: main test
 
-
-
 clean:
 	rm UtilityFunctions.o main test
 
@@ -17,4 +15,5 @@ main: UtilityFunctions.o main.cpp
 	$(CXX) $(CXXFLAGS) main.cpp UtilityFunctions.o -o main
 
 UtilityFunctions.o: UtilityFunctions.cpp
+	$(CXX) $(CXXFLAGS) -c UtilityFunctions.cpp
 	$(CXX) $(CXXFLAGS) -c UtilityFunctions.cpp
