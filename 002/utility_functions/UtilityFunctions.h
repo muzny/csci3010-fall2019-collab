@@ -13,4 +13,3 @@ int Sign (int num);
 //Sam Evans
 std::vector<std::string> AddN(std::vector<std::string>, std::string n);
 
-#endif
