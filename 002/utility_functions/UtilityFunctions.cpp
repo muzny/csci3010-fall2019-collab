@@ -2,7 +2,7 @@
 #include <vector> //include the ability to use vectors
 // Implement your functions here. Don't forget function comments!
 
-//Abby Nay Function
+//Takes a vector of integers and returns the sum of all integers within the vector
 int Sum(std::vector<int> nums){
     int total = 0; //this will keep track of the sum of the elements of the vector
     int size; //this will let us know how many elements of the vector there are
