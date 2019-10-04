@@ -8,14 +8,14 @@ The function divides the elements of v by the number passed in.
 If it does not evenly divide then the element is taken out
 Return the updated vector
 */
-std::vector<int> MultiplesFilter(std::vector<int> v, int divides_by){
-    for(int i = 0; i < v.size(); i++){
-        if(v[i] % divides_by == 0){
+std::vector<int> MultiplesFilter(std::vector<int> vectorChad, int divides_by){
+    for(int i = 0; i < vectorChad.size(); i++){
+        if(vectorChad[i] % divides_by == 0){
             continue;
         }else{
-            v.erase(v.begin()+i);
+            vectorChad.erase(vectorChad.begin()+i);
             i = i -1;
         }
     }
-    return v;
+    return vectorChad;
 }
