@@ -1,15 +1,21 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cstdlib>
 #include <math.h>
 #include "UtilityFunctions.h"
-
-
 using namespace std;
 
-
-
-
+// Function to multiply every element in a vector
+int Product(vector<int> nums)
+{
+  int product = 1;
+  for(int i = 0; i < nums.size(); i++)
+  {
+    product = product * nums[i];
+  }
+  return product;
+}
 
 /**
     returns a vector that is the input vector times any given n.

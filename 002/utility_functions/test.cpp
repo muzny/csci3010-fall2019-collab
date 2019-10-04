@@ -1,12 +1,10 @@
 #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
-
 #include <vector>
-
 #include <iostream>
-
 #include "UtilityFunctions.h"
 using namespace std;
+
 
 // Your tests go here
 // Each TEST_CASE should test one function
@@ -18,12 +16,6 @@ TEST_CASE() {
     REQUIRE( Sign(-2.764) == -1 );
 }
 
-
-TEST_CASE("addN(Double)is working."){
-    vector<double> test_vector3 = {1.0, 2.0, 3.0, 4.0};
-    vector<double> correct_vector3={2.0, 3.0, 4.0, 5.0};
-    REQUIRE(AddN(test_vector3,1.0)==correct_vector3);
-}
 
 /*
 This test cases tests the Factorial function in UtilityFunctions.cpp.
@@ -83,4 +75,3 @@ TEST_CASE("return 1 if positive and -1 if negative","[Sign]") {
         REQUIRE(Sign(-1)==-1);
     }
 }
-
