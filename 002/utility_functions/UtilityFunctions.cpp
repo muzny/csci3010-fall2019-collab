@@ -1,10 +1,22 @@
 #include <iostream>
-#include <vector>
+#include "UtilityFunctions.h"
+#include <vector> //include the ability to use vectors
 #include <string>
 #include <cstdlib>
 #include <math.h>
-#include "UtilityFunctions.h"
 using namespace std;
+
+//Takes a vector of integers and returns the sum of all integers within the vector  
+int Sum(std::vector<int> nums){
+    int total = 0; //this will keep track of the sum of the elements of the vector
+    int size; //this will let us know how many elements of the vector there are
+    size = nums.size(); //we want to set the size here since we want to optimize our for loop, that way a function isn't called each loop
+    //loop through the elements of the vector
+    for(int i=0; i<size; i++){
+        total+=nums.at(i); //add each value in the vector to the total
+    }
+    return total; //return the sum of the vector elements
+}
 
 // Function to multiply every element in a vector
 int Product(vector<int> nums)
@@ -80,6 +92,16 @@ vector<double> AddN(vector<double> v, double n){
     }
     return v; //then return.
 }
+std::string Join(std::vector<std::string> pieces, std::string glue) {
+  std::string s;
+  for (int unsigned i = 0; i < pieces.size(); i++){
+    if(i < pieces.size() - 1)
+      s = s + pieces[i] + glue;
+    else
+      s = s + pieces[i];
+  }
+  return s;
+}
 
 //Recursively calls the fibonachi function if the number isnt 0 or 1. 
 int fibonacci(int n){
@@ -114,4 +136,12 @@ int Factorial(int n){
 	}
 }
 
-
+double Product(vector<double> nums)
+{
+  double product = 1;
+  for(int i = 0; i < nums.size(); i++)
+  {
+    product = product * nums[i];
+  }
+  return product;
+}
