@@ -12,5 +12,5 @@ int fibonacci(int n);
 
 // adds n to each element of the vector
 //Sam Evans
-std::vector<std::string> AddN(std::vector<std::string>, std::string n);
+std::vector<std::string> AddN(std::vector<std::string> strvect, std::string n);
 
