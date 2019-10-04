@@ -9,7 +9,7 @@ using namespace std;
 // Each SECTION should test one aspect of that function
 
 //Test for sign function
-TEST_CASE("return 1 if positive and -1 if negative","[Sign]"){
+TEST_CASE("return 1 if positive and -1 if negative","[Sign]") {
     REQUIRE(Sign(0)==0);
     SECTION("Test with positive values") {
         REQUIRE(Sign(2)==1);
