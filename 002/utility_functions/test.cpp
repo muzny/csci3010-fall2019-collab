@@ -4,10 +4,6 @@
 #include "UtilityFunctions.h"
 using namespace std;
 
-vector<int> test_vector = {1, 2, 3, 4};
-int greater_than = 3;
-vector<bool> correct_vector = {false, false, false, true};
-
 // Your tests go here
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
