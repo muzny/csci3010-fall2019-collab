@@ -30,7 +30,6 @@ TEST_CASE ("Testing Product Function", "[product]"){
 #include <iostream>
 #include <vector>
 
-#include "UtilityFunctions.h"
 using namespace std;
 
 TEST_CASE( "combines vector to string with glue in between", "[vector]" ) {
