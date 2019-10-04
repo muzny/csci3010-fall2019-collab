@@ -122,8 +122,6 @@ std::vector<int> Multiples(int n, int m){
 }
 
 /**
-
-/*
 Function that returns n! or n factoral.
 
 @param n is the number you want to be factoraled

@@ -15,8 +15,6 @@ std::vector<int> Multiples(int n, int m);
 //
 std::vector<double> SubtractN(std::vector<double> vec, double n);
 
-#endif //end _NAME_H_ header guard
-
 // put the declarations of your utility functions here.
 // they should not be in a class.
 
