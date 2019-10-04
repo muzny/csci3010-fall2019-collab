@@ -1,5 +1,5 @@
 #ifndef _UTILITYFUNCTIONS_H_
-#define _UTILITYFUNCTIONS_H_
+#define _NAME_H_
 #include <iostream>
 #include "catch.hpp"
 #include <vector>
