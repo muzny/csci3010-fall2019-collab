@@ -36,6 +36,7 @@ TEST_CASE("testing the SubtractN function", "[classic]")
       vector<double>WhatIWant={-2,-3,-4,-5,-6};
       REQUIRE(SubtractN(negVect,n)==WhatIWant);
     }
+}
 
   
 TEST_CASE( "Removes the first instance of a substring from a string", "RemoveFirstSubstring" ) {
