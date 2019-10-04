@@ -8,3 +8,8 @@ using namespace std;
 
 int Sign (int num);
 
+
+// subtracts n to each element of the vector
+vector<double> SubtractN(vector<double> input, double n);
+
+#endif

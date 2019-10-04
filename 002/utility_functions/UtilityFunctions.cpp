@@ -36,3 +36,23 @@ int Factorial(int n){
 	}
 }
 
+// Function that returns a vector with number n subtracted from each value in the vector
+vector<double> SubtractN(vector<double> input, double n)
+{
+  vector<double> retVect; //this is the vector ultimately being returned from the function
+  for (unsigned int i=0; i<input.size(); i++)
+  {
+    double val = input[i]-n;
+    retVect.push_back(val);
+  }
+  return retVect;
+}
+
+// takes two strings and returns a new string that is the result of removing the first occurrence of s2 from s1.
+string RemoveFirstSubstring(string s1, string s2){
+    int first_index = s1.find(s2); //First index of the instace of the sub string
+    if(first_index < 0){ // if there isn't an instance do nothing
+        return s1;
+    }
+    return s1.substr(0,first_index) + s1.substr(first_index+s2.size(),-1); // return the substring before and after the instance
+}
