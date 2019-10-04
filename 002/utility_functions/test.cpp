@@ -55,3 +55,20 @@ TEST_CASE("Product is working")
         REQUIRE(Product(t_5) == a_5);
     }
 }
+
+
+
+
+TEST_CASE( "combines vector to string with glue in between", "[vector]" ) {
+  std::vector<string> a{"wow"};
+  string glue = "-";
+  SECTION("vector of single entity", "[vector]"){
+    REQUIRE( Join(a, glue) == "wow");
+  };
+  vector<string> b{"wow", "this", "is", "COOOOOL"};
+  SECTION("vector of multiple entities", "[vector]"){
+    REQUIRE( Join(b, glue) == "wow-this-is-COOOOOL");
+    glue =  " ";
+    REQUIRE( Join(b, glue) == "wow this is COOOOOL");
+  }
+}

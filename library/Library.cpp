@@ -32,4 +32,9 @@ void Library::PrintBooks() {
 	for (Book b : shelf_) {
 		std::cout << b.title << " by " << b.author << std::endl;
 	}
+} 
+    
+/* how many books are in the shelf */
+void Library::PrintShelfSize() {
+    std::cout << "There are " << shelf_.size() << " books on the shelf." << std::endl;
 }
