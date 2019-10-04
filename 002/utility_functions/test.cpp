@@ -71,7 +71,16 @@ TEST_CASE("testing multiplying vector elements by a constant n","[vector]"){
 	}
 }
 
+//Test for string addition
 
+TEST_CASE ( "String Vector addition is working.") {
+    
+  vector<std::string> test_vector3 = {"a", "b", "c"};
+  std::string input3 = "d";
+  vector <std::string> correct_vector3 = {"ad", "bd", "cd"};
+  REQUIRE( AddN(test_vector3, input3) == correct_vector3 );
+
+}
 
 //Test for fibonacci
 TEST_CASE ( "Fibonacci", "[Fibonacci]") {
