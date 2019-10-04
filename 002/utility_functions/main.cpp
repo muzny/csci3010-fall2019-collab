@@ -1,7 +1,16 @@
+
 #include "UtilityFunctions.h"
+
 using namespace std;
 
-int main() {
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
+int main()
+{
     // the main function should have demonstrations
     // of running your functions.
     // make sure that the output is easily interpretable.
@@ -14,4 +23,12 @@ int main() {
 
     bool matches = res == des;
     cout << matches << endl;
+
+    std::cout << fibonacci(15) << '\n';
+
+    int a=2;
+    int Sign(a);
+   // int Sign (-3);
+
+
 }
