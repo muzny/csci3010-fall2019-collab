@@ -1,4 +1,3 @@
-
 #ifndef _UTILITY_FUNCTIONS_H_
 #define _UTILITY_FUNCTIONS_H_
 // put the declarations of your utility functions here.
@@ -32,15 +31,11 @@ int Sign (int num);
 // checks the sign of num. returns -1 if negative, 1 if positive.
 double Sign(double num);
 
-vector<bool> GreaterMask(vector<int> nums, int greater_than);
 
-// adds n to each element of the vector
-vector<double> AddN(std::vector<double>, double n);
+// multiplies all the vector stuff
+int Product(vector<int> nums);
 
 
-//Returns the factorial of n. 
-int Factorial(int n);
-int Sign (int num);
 int fibonacci(int n);
 
 #endif // UTILITY_FUNCTIONS

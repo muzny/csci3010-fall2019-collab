@@ -2,6 +2,7 @@
 #include "UtilityFunctions.h"
 #include <vector> //include the ability to use vectors
 #include <string>
+#include <cstdlib>
 #include <math.h>
 using namespace std;
 
@@ -17,13 +18,17 @@ int Sum(std::vector<int> nums){
     return total; //return the sum of the vector elements
 }
 
-std::vector<bool> GreaterMask(std::vector<int> nums, int greater_than)
+// Function to multiply every element in a vector
+int Product(vector<int> nums)
 {
-    // creating a new vector to return true or false
-    std::vector<bool> true_or_false;
-    // iterating through the vector of ints
-    for (int i = 0; i < nums.size(); i++)
+  int product = 1;
+  for(int i = 0; i < nums.size(); i++)
+  {
+    product = product * nums[i];
+  }
+  return product;
 }
+
 /**
     returns a vector that is the input vector times any given n.
 
