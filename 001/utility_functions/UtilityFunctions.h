@@ -54,3 +54,5 @@ int Sum(std::vector<int> input);
 
 // returns a vector with true for odd numbers and false for even numbers
 std::vector<bool> OddMask(std::vector<int> numbers);
+
+#endif
