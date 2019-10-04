@@ -1,7 +1,15 @@
+
 #include "UtilityFunctions.h"
 #include <vector>
 #include <iostream>
 int main() {
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
     // the main function should have demonstrations
     // of running your functions.
     // make sure that the output is easily interpretable.
@@ -20,4 +28,10 @@ for(int i = 0; i < v1.size(); i++){
 std::cout << "\n" << v1[i];
 }
 std::cout << "\n";
+
+    int a=2;
+    int Sign(a);
+   // int Sign (-3);
+
+
 }
