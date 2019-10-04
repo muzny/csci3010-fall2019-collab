@@ -13,12 +13,8 @@ public:
 
     void Donate(Book b);
 
-    //Acquire amount of copies of Book b.
-    void Acquire(Book b, int copies);
-
-    void PrintBooks();
-    
     void PrintShelfSize();
+    void Browse(char);
 
 private:
     // arrays require size to be known at compile time.

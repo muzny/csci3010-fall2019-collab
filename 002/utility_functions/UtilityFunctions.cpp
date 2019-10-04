@@ -19,7 +19,6 @@ int Sign (int num){
     }
 }
 
-
 // Implement your functions here. Don't forget function comments!
 /*
 Returns the factorial of n. 
