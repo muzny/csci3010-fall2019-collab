@@ -7,6 +7,8 @@ class UtilityFunctions{
 public:
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 };
+//Returns the factorial of n. 
+int Factorial(int n);
 #include <vector>
 #include <iostream>
 using namespace std;
