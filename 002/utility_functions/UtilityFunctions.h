@@ -1,13 +1,12 @@
-#ifndef UTILITYFUNCTIONS_H
-#define UTILITYFUNCTIONS_H
-
 // put the declarations of your utility functions here.
 // they should not be in a class.
-#include <iostream>
+//Returns the factorial of n. 
+int Factorial(int n);
 #include <vector>
+#include <iostream>
 using namespace std;
 
-vector<bool> GreaterMask(vector<int> nums, int greater_than);
+int Sign (int num);
 
 
 // adds n to each element of the vector
