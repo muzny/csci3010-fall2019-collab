@@ -17,6 +17,8 @@ public:
     void Acquire(Book b, int copies);
 
     void PrintBooks();
+    
+    void PrintShelfSize();
 
 private:
     // arrays require size to be known at compile time.
