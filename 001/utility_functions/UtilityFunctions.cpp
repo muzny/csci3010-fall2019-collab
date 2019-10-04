@@ -101,3 +101,15 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return return_string;
 	}
 };
+
+//Daniel Camarena! 
+//Function takes a postive int and makes a vector of its squares one to n
+std::vector<int> SquaresUntil(int n){
+	std::vector<int> squares;
+	if(n>0){
+		for(int i=1;i<=n;i++){
+			squares.push_back(i*i);
+		}
+	}
+	return squares;
+}

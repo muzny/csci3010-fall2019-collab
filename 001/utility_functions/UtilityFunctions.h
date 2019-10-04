@@ -28,3 +28,7 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
+
+//Daniel Camarena 
+//Takes a postive int, returns empty vec if negative or 0, else returns a vector from 1 to n of it's squares
+std::vector<int> SquaresUntil(int n);

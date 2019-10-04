@@ -136,4 +136,26 @@ TEST_CASE("Split string on separator", "[split]"){
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
 }
+//Daniel Camarena
+TEST_CASE( "Vector is made properly", "[squaresuntil]" ){
+    std::vector<int> empty_vec;
 
+    SECTION( "testing negative and 0 values" ) {
+        REQUIRE( SquaresUntil(-15).empty() == empty_vec.empty()); //check negative values return empty_vec
+		REQUIRE( SquaresUntil(0).empty() == empty_vec.empty()); //check zero returns empty_vec
+
+    }
+    std::vector<int> test_vec;
+    SECTION( "Positive Values" ) {
+        test_vec.push_back(1);
+        test_vec.push_back(4);
+        test_vec.push_back(9);
+        test_vec.push_back(16);
+        test_vec.push_back(25);
+        REQUIRE( SquaresUntil(1)[0] == test_vec[0]); //check negative values return empty_vec
+        REQUIRE( SquaresUntil(2)[1] == test_vec[1]);
+        REQUIRE( SquaresUntil(3)[2] == test_vec[2]);
+        REQUIRE( SquaresUntil(4)[3] == test_vec[3]);
+        REQUIRE( SquaresUntil(5)[4] == test_vec[4]);
+    }
+}
