@@ -1,29 +1,22 @@
 #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
-
+#include <vector>
+#include <iostream>
 #include "UtilityFunctions.h"
 using namespace std;
 
-vector<int> test_vector2 = {10, 20, 30};
-int greater_than2 = 15;
-vector <bool> correct_vector2 = {false, true, true};
 
-vector<std::string> test_vector3 = {"a", "b", "c"};
-std::string input3 = "d";
-vector <std::string> correct_vector3 = {"ad", "bd", "cd"};
-
-
-TEST_CASE ( "Vector is working.") {
-    
-    REQUIRE( GreaterMask(test_vector, greater_than) ==  correct_vector);
-    REQUIRE( GreaterMask(test_vector2, greater_than2) == correct_vector2 );
-
-    REQUIRE( AddN(test_vector3, input3) == correct_vector3 );
-
-}
-
+// Your tests go here
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
+
+// tests the sign function with two sections (checks both positive and negative cases)
+TEST_CASE() {
+    REQUIRE( Sign(4.5) == 1 );
+    REQUIRE( Sign(-2.764) == -1 );
+}
+
+
 /*
 This test cases tests the Factorial function in UtilityFunctions.cpp.
 The two sections are 5! and 4!. 
@@ -41,6 +34,38 @@ TEST_CASE("Factorial"){
 	}
 }
 
+
+
+TEST_CASE("testing multiplying vector elements by a constant n","[vector]"){
+	vector<int> v1{1,2,3,4};
+	SECTION("vector <1,2,3,4> "){
+		vector<int> v1{1,2,3,4};
+		vector<int> v2{2,4,6,8};
+		REQUIRE (VectorTimesN(v1,2) == v2);
+	}
+
+	SECTION("empty vector"){
+		vector<int> empty;
+		vector<int> emptyCheck;
+		REQUIRE(VectorTimesN(empty,100) ==emptyCheck);
+	}
+}
+
+//Test for string addition
+
+TEST_CASE ( "String Vector addition is working.") {
+    
+  vector<std::string> test_vector3 = {"a", "b", "c"};
+  std::string input3 = "d";
+  vector <std::string> correct_vector3 = {"ad", "bd", "cd"};
+  
+    REQUIRE( GreaterMask(test_vector, greater_than) ==  correct_vector);
+    REQUIRE( GreaterMask(test_vector2, greater_than2) == correct_vector2 );
+
+    REQUIRE( AddN(test_vector3, input3) == correct_vector3 );
+
+}
+
 //Test for fibonacci
 TEST_CASE ( "Fibonacci", "[Fibonacci]") {
   REQUIRE( fibonacci(15) == 610 );
@@ -55,6 +80,7 @@ TEST_CASE("return 1 if positive and -1 if negative","[Sign]") {
         REQUIRE(Sign(2)==1);
         REQUIRE(Sign(5)==1);
         REQUIRE(Sign(1)==1);
+
     }
     SECTION("Test with negative values ") {
         REQUIRE(Sign(-3)==-1);
