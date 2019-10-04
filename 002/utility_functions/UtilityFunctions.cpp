@@ -1,8 +1,8 @@
-//Alden Maben
 #include "UtilityFunctions.h"
-#include <string>
 #include <iostream>
+#include <string>
 using namespace std;
+
 
 
 #include <cstdlib>
@@ -29,6 +29,19 @@ string Join(vector<string> pieces, string glue) {
   };
   return s;
 }
+
+// checks the sign of num. returns -1 if negative, 1 if positive.
+double Sign(double num){
+    if (num > 0){
+        return 1;
+    } else if (num == 0){
+        return 0;
+    } else {
+        return -1;
+    }
+}
+  //Alden Maben
+
 
 //  This function will take any integer and will return 1 if the value is positive, -1 if the value is negative, and 0 if the value is 0
 int Sign (int num){

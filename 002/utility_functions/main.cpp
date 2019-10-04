@@ -1,8 +1,5 @@
-
 #include "UtilityFunctions.h"
 #include <iostream>
-#include <vector>
-
 using namespace std;
 
 
@@ -14,6 +11,11 @@ int main()
     // If you'd like to define helper functions in this file,
     // you are welcome to do so!
     std::cout << fibonacci(15) << '\n';
+
+  
+    // these two cout statements show the sign function is working. prints 1 for positive numbers, and -1 for negative numbers.
+    cout << Sign(5.4) << endl;
+    cout << Sign(-2.2) << endl;
 
     int a=2;
     int Sign(a);
