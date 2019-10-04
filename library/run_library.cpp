@@ -23,4 +23,6 @@ int main() {
     
     lib.PrintBooks();
     lib.PrintShelfSize();
+    lib.PrintBooks(); // test to see if library contains some books after construction 
+    
 }
