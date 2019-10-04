@@ -3,8 +3,6 @@
 #include "UtilityFunctions.h"
 #include <limits>
 #include <string>
-#include <vector>
-#include <iostream>
 
 // Your tests go here
 // Each TEST_CASE should test one function
@@ -32,8 +30,6 @@ TEST_CASE("Subtraction is completed", "[subtractn]"){
 		REQUIRE ( SubtractN(std::vector<double>{5,6,7,8,9}, 9) == std::vector<double>{-4, -3, -2, -1, 0});
   }
 }
-
-
 
 TEST_CASE( "Multiples are computed", "[multiple]" ) {
     SECTION("Normal"){
@@ -232,4 +228,10 @@ TEST_CASE("Split string on separator", "[split]"){
 		std::vector<std::string> return_strings2 = Split(ex, splitter2);
 		REQUIRE(return_strings2[0]=="Error, could not find separator");
 	}
+}
+
+TEST_CASE("Vector string join on delimiter", "[Join]") {
+    REQUIRE(Join({"Cats", "Dogs", "Fish"}, ",") == "Cats,Dogs,Fish");
+    REQUIRE(Join({"Cats", "Dogs", "Fish"}, "|") == "Cats|Dogs|Fish");
+    REQUIRE(Join({"John", "Ralph", "Smith"}, " ") == "John Ralph Smith");
 }

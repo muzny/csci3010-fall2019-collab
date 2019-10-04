@@ -1,7 +1,4 @@
-#ifndef _UTILITYFUNCTIONS_H_
-#define _NAME_H_
 #include <iostream>
-#include "catch.hpp"
 #include <vector>
 #include <string>
 
@@ -48,11 +45,12 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
 
+// Joins together a vector of strings using a string glue 
+std::string Join(std::vector<std::string> pieces, std::string glue);
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
+
 int Sum(std::vector<int> input);
 
 // returns a vector with true for odd numbers and false for even numbers
 std::vector<bool> OddMask(std::vector<int> numbers);
-
-#endif

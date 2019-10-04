@@ -33,8 +33,6 @@ std::string VectorAsEquation(std::vector<int> v) {
     return print_message + " = ";
 }
 
-
-
 /**
 Oceane Andreis & Mikayla Pickett
 This is our main file. We declared a few vectors of different size to see how our function would work.
@@ -43,7 +41,9 @@ We made sure to also try it by adding a number to our vector and then getting th
 */
 
 int main() {
-
+    // Test vector joing function
+    std::cout << Join({"Cats", "Dogs", "Fish"}, ",") << std::endl;
+  
     std::vector<int> nums = {0,1,2,3,4,10};
     std::vector<int> nums2 = {2,3,4,10};
     std::vector<int> nums3 = {200,10};
@@ -174,6 +174,6 @@ int main() {
     for (int i = 0; i<result2.size(); i++){
     	std::cout<<result2[i]<<std::endl;
     }
-
+  
   return 0;
 }

@@ -91,6 +91,25 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 	return a;
 }
 
+/**
+	Joins a vector of strings with a delimiter.
+
+    @param pieces Vector of strings
+    @param glue Delimeter
+    @return Generated joined string
+*/
+std::string Join(std::vector<std::string> pieces, std::string glue) {
+    std::string res = "";
+    for (int i = 0; i < pieces.size(); i++) {
+        if (i == pieces.size() - 1) {
+            res += pieces[i];
+        }
+        else {
+            res += pieces[i] + glue;
+        }
+    }
+    return res;
+}
 
 // Duaa Alahmed
 // returns a vector with true for odd numbers and false for even numbers
@@ -117,8 +136,6 @@ std::vector<int> Multiples(int n, int m){
 }
 
 /**
-
-/*
 Function that returns n! or n factoral.
 
 @param n is the number you want to be factoraled
