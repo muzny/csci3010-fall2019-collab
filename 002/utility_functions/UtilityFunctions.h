@@ -19,7 +19,6 @@ int Factorial(int n);
 std::vector<int> VectorTimesN(std::vector<int> v, int n);
 
 vector<bool> GreaterMask(vector<int> nums, int greater_than);
-double Product(std::vector<double> nums);
 
 string Join(std::vector<string> pieces, string glue);
 int Sign (int num);

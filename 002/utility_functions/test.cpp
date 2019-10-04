@@ -35,38 +35,13 @@ TEST_CASE("testing multiplying vector elements by a constant n","[vector]"){
 	}
 
 	SECTION("empty vector"){
-		vector<int> empty{};
-		vector<int> emptyCheck{};
+		vector<int> empty;
+		vector<int> emptyCheck;
 		REQUIRE(VectorTimesN(empty,100) ==emptyCheck);
 	}
 }
 
 
-TEST_CASE("Product is working")
-{
-    vector<double> t_1 = {1.0, 2.0, 3.0, 5.0};
-    double a_1 = 30.0;
-    vector<double> t_2 = {-1.0, -2.0, -4.0};
-    double a_2 = -8.0;
-    vector<double> t_3 = {-2.0, -4.0};
-    double a_3 = 8.0;
-    vector<double> t_4 = {1.0, 2.0, 3.0, 0.0};
-    double a_4 = 0.0;
-    vector<double> t_5 = {5.0};
-    double a_5 = 5.0;
-
-    SECTION("All Positive Numbers") // testing a regular vector
-    {
-        REQUIRE(Product(t_1) == a_1);
-    }
-    SECTION("Odd Negatives") // testing to make sure that when multiplying an odd amount of negative numbers it returns a negative product
-                             
-    {
-        REQUIRE(Product(t_2) == a_2);
-    }
-    SECTION("Even Negatives")// testing to make sure that when multiplying an even amount of negative numbers it returns a postive product
-    {
-        REQUIRE(Product(t_3) == a_3);
 
 //Test for fibonacci
 TEST_CASE ( "Fibonacci", "[Fibonacci]") {

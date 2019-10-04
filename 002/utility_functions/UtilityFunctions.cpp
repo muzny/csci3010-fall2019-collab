@@ -1,9 +1,5 @@
-
 #include <iostream>
 #include <vector>
-
-//Alden Maben
-
 #include <string>
 #include <math.h>
 #include "UtilityFunctions.h"
@@ -27,7 +23,7 @@ vector<int> VectorTimesN(vector<int> v, int n){
 		tmp.push_back(v[i]*n);
 	}
 	return tmp;
-
+}
 
 // Implement your functions here. Don't forget function comments!
 
@@ -36,8 +32,11 @@ vector<bool> GreaterMask(vector<int> nums, int greater_than)
     // creating a new vector to return true or false
     vector<bool> true_or_false;
     // iterating through the vector of ints
-    for (int i = 0; i < nums.size(); i++)
-=======
+    for (int i = 0; i < nums.size(); i++) {
+        true_or_false.push_back(nums[i] > greater_than);
+    }
+    return true_or_false;
+}
 //  This function will take any integer and will return 1 if the value is positive, -1 if the value is negative, and 0 if the value is 0
 int Sign (int num){
     if (num > 0)

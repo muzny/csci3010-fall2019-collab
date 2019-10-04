@@ -24,12 +24,8 @@ int main()
    // int Sign (-3);
 
 
+    //Kevin Ruby -- A program to multiple all elements in vector by n.
 
-
-
-//Kevin Ruby -- A program to multiple all elements in vector by n.
-
-int main() {
 	vector<int> input{3,4,5};
     vector<int> output = VectorTimesN(input,5);
 
