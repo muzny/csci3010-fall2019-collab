@@ -1,14 +1,11 @@
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-#include "catch.hpp"
-
+#define CATCH_CONFIG_MAIN
 #include "UtilityFunctions.h"
-vector<int> test_vector = {1, 2, 3, 4};
-int greater_than = 3;
-vector<bool> correct_vector = {false, false, false, true};
 
-vector<int> test_vector2 = {10, 20, 30};
-int greater_than2 = 15;
-vector <bool> correct_vector2 = {false, true, true};
+#include "catch.hpp"
+#include <iostream>
+#include <vector>
+
+using namespace std;
 
 TEST_CASE ( "Vector is working.") {
     
@@ -24,4 +21,17 @@ TEST_CASE ( "Vector is working.") {
 TEST_CASE() {
     REQUIRE( Sign(4.5) == 1 );
     REQUIRE( Sign(-2.764) == -1 );
+}
+  TEST_CASE( "combines vector to string with glue in between", "[vector]" ) {
+  std::vector<string> a{"wow"};
+  string glue = "-";
+  SECTION("vector of single entity", "[vector]"){
+    REQUIRE( Join(a, glue) == "wow");
+  };
+  vector<string> b{"wow", "this", "is", "COOOOOL"};
+  SECTION("vector of multiple entities", "[vector]"){
+    REQUIRE( Join(b, glue) == "wow-this-is-COOOOOL");
+    glue =  " ";
+    REQUIRE( Join(b, glue) == "wow this is COOOOOL");
+  }
 }

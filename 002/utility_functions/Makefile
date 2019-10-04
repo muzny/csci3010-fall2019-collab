@@ -5,8 +5,6 @@ GDBINFO = -ggdb # include this to generate info needed to run gdb
 
 all: main test
 
-
-
 clean:
 	rm UtilityFunctions.o main test
 

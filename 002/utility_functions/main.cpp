@@ -11,9 +11,11 @@ int main() {
 
 
 #include <vector>
+
 using namespace std;
 
 int main() {
+
     vector<int> test_vector = {1, 2, 3, 4};
     vector<bool> output_vector;
     output_vector = GreaterMask(test_vector, 3);
@@ -24,4 +26,9 @@ int main() {
     // these two cout statements show the sign function is working. prints 1 for positive numbers, and -1 for negative numbers.
     std::cout << Sign(5.4) << std::endl;
     std::cout << Sign(-2.2) << std::endl;
+
+    std::vector<string> my_fav = {"I", "Like", "PB&J"};
+    string glue = " ";
+    cout << Join(my_fav, glue) << endl;
+    //Prints string "I Like PB&J"
 }
