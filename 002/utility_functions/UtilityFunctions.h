@@ -5,3 +5,8 @@
 
 //Takes a vector of integers and returns the sum of the integers within the vectors
 int Sum(std::vector<int> nums);
+
+std::vector<bool> GreaterMask(std::vector<int> nums, int greater_than);
+double Product(std::vector<double> nums);
+
+std::string Join(std::vector<std::string> pieces, std::string glue);
