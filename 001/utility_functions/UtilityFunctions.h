@@ -49,6 +49,11 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 int Product(std::vector<int> nums);
 
 
+//Daniel Camarena 
+//Takes a postive int, returns empty vec if negative or 0, else returns a vector from 1 to n of it's squares
+std::vector<int> SquaresUntil(int n);
+
+
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 int Sum(std::vector<int> input);
 
@@ -56,3 +61,4 @@ int Sum(std::vector<int> input);
 std::vector<bool> OddMask(std::vector<int> numbers);
 
 #endif
+

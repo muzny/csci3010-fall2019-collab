@@ -175,5 +175,13 @@ int main() {
     	std::cout<<result2[i]<<std::endl;
     }
 
+    //Daniel Camarena
+    //Test SquaresUnitl(int n);
+    std::vector<int> test_vec=SquaresUntil(10);
+    std::cout<<"Testing SquaresUntil and passing 10"<<std::endl;
+    for(int i=0;i<test_vec.size();i++){
+        std::cout<<"Square of "<<i+1<<" = "<<test_vec[i]<<std::endl;
+    }
+
   return 0;
 }
