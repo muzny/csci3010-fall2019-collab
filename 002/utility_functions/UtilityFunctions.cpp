@@ -19,6 +19,12 @@ int Sign (int num){
     }
 }
 
+std::vector<double> UtilityFunctions::VectorPlusN(std::vector<double> v, double n){
+for(int i = 0; i < v.size(); i++){
+v[i] += n;
+}
+return v;
+}
 
 
 // Implement your functions here. Don't forget function comments!
