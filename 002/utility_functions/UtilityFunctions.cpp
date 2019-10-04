@@ -24,3 +24,10 @@ vector<bool> GreaterMask(vector<int> nums, int greater_than){
 }
 
 // Implement your functions here. Don't forget function comments!
+
+vector<double> AddN(vector<double> v, double n){
+    for (int i = 0; i < v.size(); ++i) {   //for each element in vector v
+        v[i] += n;   //add n to it.
+    }
+    return v; //then return.
+}

@@ -8,5 +8,6 @@
 using namespace std;
 
 vector<bool> GreaterMask(vector<int> nums, int greater_than);
-
+// adds n to each element of the vector
+vector<double> AddN(std::vector<double>, double n);
 #endif
