@@ -31,11 +31,14 @@ int Sign (int num);
 // checks the sign of num. returns -1 if negative, 1 if positive.
 double Sign(double num);
 
+// adds n to each element of the vector
+std::vector<std::string> AddN(std::vector<std::string> strvect, std::string n);
 
 // multiplies all the vector stuff
 int Product(vector<int> nums);
 
 
 int fibonacci(int n);
+
 
 #endif // UTILITY_FUNCTIONS
