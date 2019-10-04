@@ -17,12 +17,6 @@ TEST_CASE() {
 }
 
 
-TEST_CASE("addN(Double)is working."){
-    vector<double> test_vector3 = {1.0, 2.0, 3.0, 4.0};
-    vector<double> correct_vector3={2.0, 3.0, 4.0, 5.0};
-    REQUIRE(AddN(test_vector3,1.0)==correct_vector3);
-}
-
 /*
 This test cases tests the Factorial function in UtilityFunctions.cpp.
 The two sections are 5! and 4!. 
