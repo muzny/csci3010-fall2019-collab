@@ -4,22 +4,26 @@
 #include "UtilityFunctions.h"
 using namespace std;
 
-TEST_CASE("Vector is working.")
-{
-    vector<int> test_vector = {1, 2, 3, 4};
-    int greater_than = 3;
-    vector<bool> correct_vector = {false, false, false, true};
-
-    vector<int> test_vector2 = {10, 20, 30};
-    int greater_than2 = 15;
-    vector<bool> correct_vector2 = {false, true, true};
-
-    REQUIRE(GreaterMask(test_vector, greater_than) == correct_vector);
-    REQUIRE(GreaterMask(test_vector2, greater_than2) == correct_vector2);
-}
 // Your tests go here
 // Each TEST_CASE should test one function
 // Each SECTION should test one aspect of that function
+/*
+This test cases tests the Factorial function in UtilityFunctions.cpp.
+The two sections are 5! and 4!. 
+*/
+TEST_CASE("Factorial"){
+	SECTION("Factorial of 5."){
+		int n = 5;
+
+		REQUIRE(Factorial(n) == 120);
+	}
+	SECTION("Factorial of 4."){
+		int n = 4;
+
+		REQUIRE(Factorial(n) == 24);
+	}
+}
+
 
 TEST_CASE("testing multiplying vector elements by a constant n","[vector]"){
 	vector<int> v1{1,2,3,4};
@@ -62,31 +66,20 @@ TEST_CASE("Product is working")
     SECTION("Even Negatives")// testing to make sure that when multiplying an even amount of negative numbers it returns a postive product
     {
         REQUIRE(Product(t_3) == a_3);
+=======
+//Test for sign function
+TEST_CASE("return 1 if positive and -1 if negative","[Sign]") {
+    REQUIRE(Sign(0)==0);
+    SECTION("Test with positive values") {
+        REQUIRE(Sign(2)==1);
+        REQUIRE(Sign(5)==1);
+        REQUIRE(Sign(1)==1);
+
     }
-    SECTION("Anything times zero")// testing to make sure that when mult by 0 result is 0
-    {
-        REQUIRE(Product(t_4) == a_4);
+    SECTION("Test with negative values ") {
+        REQUIRE(Sign(-3)==-1);
+        REQUIRE(Sign(-20)==-1);
+        REQUIRE(Sign(-1)==-1);
     }
-    SECTION("One number")// checking to see if the vector works on one element.
-    {
-        REQUIRE(Product(t_5) == a_5);
-    }
-}
-
-
-
-
-TEST_CASE( "combines vector to string with glue in between", "[vector]" ) {
-  std::vector<string> a{"wow"};
-  string glue = "-";
-  SECTION("vector of single entity", "[vector]"){
-    REQUIRE( Join(a, glue) == "wow");
-  };
-  vector<string> b{"wow", "this", "is", "COOOOOL"};
-  SECTION("vector of multiple entities", "[vector]"){
-    REQUIRE( Join(b, glue) == "wow-this-is-COOOOOL");
-    glue =  " ";
-    REQUIRE( Join(b, glue) == "wow this is COOOOOL");
-  }
 }
 
