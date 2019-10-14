@@ -48,6 +48,9 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
 
+//Selena Quintanilla
+//Checks sign, returns 1 if positive, -1 if negative
+double Sign(double num);
 
 std::vector<double> VectorPlusN(std::vector<double> v, double n);
 int Sum(std::vector<int> input);

@@ -219,9 +219,11 @@ std::vector<std::string> Split(std::string whole, std::string separator){
 		return_string.push_back(whole.substr(delim, whole.size()));
 		return return_string;
 	}
+};
 
-
-
+double Sign(double num){
+	if (num >= 0) { return 1.0; }
+	else { return -1.0; }
 }
 
 
@@ -262,5 +264,4 @@ int Sum(std::vector<int> nums){
         sum+=nums[i];
     }
     return sum;
-
 }
